@@ -334,19 +334,6 @@ lanes:
       file:                             team.html
 
   # ----------------------------------------------------------------------------
-  # AGENCY about
-  #
-  - lane:
-      enabled:                          false
-      id:                               agency_about
-      region:                           body-main
-      type:                             sync
-      base:                             _includes/custom/agency
-      path:                             static
-      file:                             about.html
-
-
-  # ----------------------------------------------------------------------------
   # NEWS panel
   #
   #   The news panel displays a configurable number of available posts
@@ -387,6 +374,18 @@ lanes:
       base:                             _includes/custom/agency
       path:                             static
       file:                             clients.html
+
+  # ----------------------------------------------------------------------------
+  # AGENCY about
+  #
+  - lane:
+      enabled:                          false
+      id:                               agency_about
+      region:                           body-main
+      type:                             sync
+      base:                             _includes/custom/agency
+      path:                             static
+      file:                             about.html
 
 # ------------------------------------------------------------------------------
 # END config

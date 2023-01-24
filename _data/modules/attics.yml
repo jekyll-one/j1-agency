@@ -55,18 +55,18 @@ settings:
         id:                             attic_home
         layout:                         home
 
-        padding_top:                    400
-        padding_bottom:                 50
+        padding_top:                    550
+        padding_bottom:                 60
         opacity:                        0.8
 
 #       background_color_1:             transparent
 #       background_color_2:             transparent
 
-        background_color_1:             "#a8aaad"                               # md-blue-900
-        background_color_2:             "#030914"                               # md-blue-900
+        background_color_1:             "#a8aaad"
+        background_color_2:             "#030914"
 
         filters:
-          grayscale:                    1
+#         grayscale:                    1
           contrast:                     0.8
           brightness:                   0.8
 
@@ -82,7 +82,7 @@ settings:
 
         padding_top:                    400
         padding_bottom:                 50
-        opacity:                        0.5
+        opacity:                        0.8
 
         background_color_1:             "#a8aaad"                               # md-blue-900
         background_color_2:             "#030914"                               # md-blue-900

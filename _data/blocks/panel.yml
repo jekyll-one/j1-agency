@@ -730,7 +730,7 @@ settings:
         properties:                     pt-8 pb-8
 
         position:                       center                                  # left | center
-        title:                          Agency Blog
+        title:                          Blog
         tagline:                        latest news
         translate_description:          notranslate                             # translate|notranslate
         description_properties:         mt-3 mr-3 mb-3

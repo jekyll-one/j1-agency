@@ -60,7 +60,7 @@ settings:
         pagePath:                       /assets/data/news_panel_posts/page
         elementScroll:                  true                                    # false = window, true = container
         scrollOffset:                   100
-        lastPage:                       1                                       # 1 page .equals 2 posts
+        lastPage:                       1                                       # 1 page "equals" 2 posts
         infoLastPage:                   false
 
         lastPageInfo_en: >

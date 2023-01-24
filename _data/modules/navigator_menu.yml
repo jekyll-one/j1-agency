@@ -24,12 +24,8 @@
 - item:                                 PORTFOLIO
   href:                                 "#portfolio"
 
-
 - item:                                 TEAM
   href:                                 "#team"
-
-# - item:                                 ABOUT
-#   href:                                 "#about"
 
 # ------------------------------------------------------------------------------
 # Menu BLOG
@@ -58,7 +54,8 @@
   href:                                 "#contact"
 
 - item:                                 ABOUT
-  href:                                 /pages/public/about/
+# href:                                 /pages/public/about/
+  href:                                 "#about"
 
 # ------------------------------------------------------------------------------
 # Menu Themes

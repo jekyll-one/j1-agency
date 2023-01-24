@@ -16,6 +16,7 @@ image:
 
 fab_menu_id:                            page_ctrl
 comments:                               false
+page_navigation:                        true
 
 regenerate:                             false
 

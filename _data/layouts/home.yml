@@ -382,7 +382,7 @@ lanes:
   # AGENCY about
   #
   - lane:
-      enabled:                          true
+      enabled:                          false
       id:                               agency_about
       region:                           body-main
       type:                             sync

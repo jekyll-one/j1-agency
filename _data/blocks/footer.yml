@@ -165,14 +165,16 @@ settings:
             type:                       about
             enabled:                    true
 
-            title:                      J1 Theme
+            title:                      J1 Agency
             title_translation:          notranslate
-            tagline:                    featured template for jekyll
+            tagline:                    popular bootstrap theme for jekyll
             text: >
-                                        Jekyll meets Bootstrap - and makes a lot of friends.
-                                        J1 Theme combines the best of OpenSource software for
-                                        the Web and the Web site generator Jekyll. J1 is Open
-                                        Source and the modules packed as well.
+                                        Agency is one of the most popular HTML themes based on
+                                        Bootstrap V5 offered by Start Bootstrap. This theme
+                                        give web developers and hobbyists a simple and clean
+                                        implementation in Jekyll for starting new projects.
+                                        This template is free and open source, released
+                                        under the MIT license.
                                         <br><br>
                                         <b>No pain for private or professional purposes.</b>
             justify:                    false
@@ -184,7 +186,7 @@ settings:
             type:                       news
             enabled:                    true
 
-            title:                      Creators Blog
+            title:                      Agency Blog
             title_translation:          notranslate                             # translate|notranslate
             tagline:                    latest news
             category:                   featured

@@ -53,9 +53,8 @@
 - item:                                 CONTACT
   href:                                 "#contact"
 
-- item:                                 ABOUT
-# href:                                 /pages/public/about/
-  href:                                 "#about"
+# - item:                                 ABOUT
+#   href:                                 "#about"
 
 # ------------------------------------------------------------------------------
 # Menu Themes

@@ -24,8 +24,14 @@
 - item:                                 PORTFOLIO
   href:                                 "#portfolio"
 
+- item:                                 ABOUT
+  href:                                 "#about"
+
 - item:                                 TEAM
   href:                                 "#team"
+
+- item:                                 CONTACT
+  href:                                 "#contact"
 
 # ------------------------------------------------------------------------------
 # Menu BLOG
@@ -48,13 +54,6 @@
 #     - title:                            Archive
 #       href:                             /pages/public/blog/navigator/archive/allview/
 #       icon:                             archive
-
-
-- item:                                 CONTACT
-  href:                                 "#contact"
-
-# - item:                                 ABOUT
-#   href:                                 "#about"
 
 # ------------------------------------------------------------------------------
 # Menu Themes

@@ -70,6 +70,16 @@ settings:
           contrast:                     0.8
           brightness:                   0.8
 
+#       currently NOT implemented|supported
+#
+#       action:
+#         enabled:                      true
+#         action_url:                   "#void"
+#         action_button:                btn-default
+#         action_icon:                  download                                # cloud-action
+#         action_icon_family:           MDI                                     # FontAweSome
+#         action_text:                  Download Now
+
     # --------------------------------------------------------------------------
     # layouts posts|pages
     #

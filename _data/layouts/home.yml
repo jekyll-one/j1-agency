@@ -322,6 +322,18 @@ lanes:
       file:                             portfolio.html
 
   # ----------------------------------------------------------------------------
+  # AGENCY about
+  #
+  - lane:
+      enabled:                          true
+      id:                               agency_about
+      region:                           body-main
+      type:                             sync
+      base:                             _includes/custom/agency
+      path:                             static
+      file:                             about.html
+
+  # ----------------------------------------------------------------------------
   # AGENCY team
   #
   - lane:
@@ -332,6 +344,30 @@ lanes:
       base:                             _includes/custom/agency
       path:                             templates
       file:                             team.html
+
+  # ----------------------------------------------------------------------------
+  # AGENCY clients
+  #
+  - lane:
+      enabled:                          true
+      id:                               agency_clients
+      region:                           body-main
+      type:                             sync
+      base:                             _includes/custom/agency
+      path:                             static
+      file:                             clients.html
+
+  # ----------------------------------------------------------------------------
+  # AGENCY contact
+  #
+  - lane:
+      enabled:                          true
+      id:                               agency_contact_form
+      region:                           body-main
+      type:                             sync
+      base:                             _includes/custom/agency
+      path:                             static
+      file:                             contact_form.html
 
   # ----------------------------------------------------------------------------
   # NEWS panel
@@ -353,42 +389,6 @@ lanes:
       region:                           body-main
       type:                             async
       properties:                       elevated-z0
-
-  # ----------------------------------------------------------------------------
-  # AGENCY contact
-  #
-  - lane:
-      enabled:                          true
-      id:                               agency_contact_form
-      region:                           body-main
-      type:                             sync
-      base:                             _includes/custom/agency
-      path:                             static
-      file:                             contact_form.html
-
-  # ----------------------------------------------------------------------------
-  # AGENCY clients
-  #
-  - lane:
-      enabled:                          true
-      id:                               agency_clients
-      region:                           body-main
-      type:                             sync
-      base:                             _includes/custom/agency
-      path:                             static
-      file:                             clients.html
-
-  # ----------------------------------------------------------------------------
-  # AGENCY about
-  #
-  - lane:
-      enabled:                          false
-      id:                               agency_about
-      region:                           body-main
-      type:                             sync
-      base:                             _includes/custom/agency
-      path:                             static
-      file:                             about.html
 
 # ------------------------------------------------------------------------------
 # END config

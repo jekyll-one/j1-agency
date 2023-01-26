@@ -78,18 +78,20 @@ defaults:
   background_color_1:                   "#0D47A1"                               # md-blue-900
   background_color_2:                   "#0D47A1"                               # md-blue-900
 
-  action_enabled:                       false
-  action_url:                           "#void"
-  action_button:                        btn-default
-  action_icon:                          download                                # cloud-action
-  action_icon_family:                   MDI                                     # FontAweSome
-  action_text:                          Download Now
-
-  logo_enabled:                         false
-  logo_url:                             /assets/images/modules/icons/j1/j1-512x512.png
-  logo_alt:                             Jekyll-One-Template
-  logo_height:                          196
-  logo_animate:                         animate__slideInDown
+  # currently NOT implemented|supported
+  #
+  # action_enabled:                       false
+  # action_url:                           "#void"
+  # action_button:                        btn-default
+  # action_icon:                          download                                # cloud-action
+  # action_icon_family:                   MDI                                     # FontAweSome
+  # action_text:                          Download Now
+  #
+  # logo_enabled:                         false
+  # logo_url:                             /assets/images/modules/icons/j1/j1-512x512.png
+  # logo_alt:                             Jekyll-One-Template
+  # logo_height:                          196
+  # logo_animate:                         animate__slideInDown
 
   # ----------------------------------------------------------------------------
   # Global settings for image-based attics only

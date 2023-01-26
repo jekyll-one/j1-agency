@@ -165,7 +165,7 @@ settings:
             type:                       about
             enabled:                    true
 
-            title:                      J1 Agency
+            title:                      Agency
             title_translation:          notranslate
             tagline:                    popular bootstrap theme for jekyll
             text: >
@@ -186,7 +186,7 @@ settings:
             type:                       news
             enabled:                    true
 
-            title:                      Agency Blog
+            title:                      Blog
             title_translation:          notranslate                             # translate|notranslate
             tagline:                    latest news
             category:                   featured

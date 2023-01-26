@@ -727,10 +727,10 @@ settings:
         comment:                        Home News Panel
         type:                           news
         category_blacklist:             [ posts, public, private, protected, featured, series ]
-        properties:                     pt-8 pb-8
+        properties:                     pt-5 pb-5
 
         position:                       center                                  # left | center
-        title:                          Blog
+        title:                          BLOG
         tagline:                        latest news
         translate_description:          notranslate                             # translate|notranslate
         description_properties:         mt-3 mr-3 mb-3

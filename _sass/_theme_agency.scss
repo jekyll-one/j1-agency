@@ -50,6 +50,7 @@ $theme: "Agency" !default;
 
 // Theme CSS sections
 // -----------------------------------------------------------------------------
+@import "./theme_agency/sections/agency_timeline.scss";
 @import "./theme_agency/sections/contact.scss";
 // @import "./theme_agency/sections/footer.scss";
 // @import "./theme_agency/sections/masthead.scss";

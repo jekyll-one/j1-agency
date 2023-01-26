@@ -29,7 +29,13 @@ resource_options:
           alt:                          Bootstrap Theme Agency
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi nunc, faucibus eget velit id, dapibus congue quam.<!--more-->In hac habitasse platea dictumst. Duis feugiat ornare nisi, vel blandit libero aliquam vel. Ut et dolor luctus, tempor tortor eget, mollis eros. Donec cursus eleifend mauris, sed feugiat elit pulvinar ac. Morbi maximus congue viverra. Nunc est mi, pulvinar non risus eget, euismod lobortis purus. Nunc aliquet posuere elit at pharetra. Nulla facilisi. Maecenas venenatis metus lectus, vel blandit dolor rutrum id. Vestibulum a lorem a risus blandit elementum. Sed accumsan orci et ultrices faucibus. Aliquam erat volutpat. Fusce sagittis dui quis urna blandit iaculis at at ante. Praesent in diam luctus, porta risus ut, lacinia urna. Vivamus mollis erat sed orci interdum convallis.
+[//]: # [role="dropcap"]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mi nunc,
+faucibus eget velit id, dapibus congue quam. In hac habitasse platea dictumst.
+Duis feugiat ornare nisi, vel blandit libero aliquam vel.
+
+excerpt__end
+
 
 Praesent luctus vehicula dignissim. Nunc in magna at lacus elementum auctor. Vestibulum lobortis fringilla viverra. Quisque consequat est sit amet libero viverra sodales. Etiam accumsan sagittis sagittis. Nam pulvinar, mauris id pulvinar placerat, lectus eros aliquam mauris, iaculis posuere lectus neque eget tellus. Vivamus eu libero id leo mattis egestas. In sollicitudin nunc et ipsum mattis fringilla. Nam et neque eget sem pharetra varius. Quisque nec placerat eros. Nunc id malesuada nisl, in tincidunt sapien. Sed cursus nibh vitae fermentum efficitur. Mauris non lectus nisi. Morbi euismod eros vitae sagittis pretium. Etiam sed lectus ac ex rutrum maximus at a dolor. Vestibulum molestie et risus nec sodales.
 

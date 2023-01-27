@@ -40,9 +40,9 @@ theme:
   author:                               Start Bootstrap
   author_url:                           https://startbootstrap.com/
 
-  theme_path:                           /assets/themes/j1/core/css/themes
-  theme_folder:                         agency
-  theme_css:                            bootstrap
+# theme_path:                           /assets/themes/j1/core/css/themes
+# theme_folder:                         agency
+# theme_css:                            bootstrap
 
 # ------------------------------------------------------------------------------
 # CSS and SASS settings

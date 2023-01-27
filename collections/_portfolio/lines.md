@@ -6,8 +6,9 @@ category:                               Branding
 
 image:                                  assets/images/agency/img/portfolio/4.jpg
 
-personalization:                        false
 comments:                               false
+sitemap:                                false
+personalization:                        false
 exclude_from_search:                    true
 ---
 

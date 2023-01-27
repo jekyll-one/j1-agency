@@ -6,8 +6,9 @@ category:                               Photography
 
 image:                                  assets/images/agency/img/portfolio/6.jpg
 
-personalization:                        false
 comments:                               false
+sitemap:                                false
+personalization:                        false
 exclude_from_search:                    true
 ---
 

@@ -6,8 +6,9 @@ category:                               Illustration
 
 image:                                  assets/images/agency/img/portfolio/1.jpg
 
-personalization:                        false
 comments:                               false
+sitemap:                                false
+personalization:                        false
 exclude_from_search:                    true
 ---
 

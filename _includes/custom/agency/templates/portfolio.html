@@ -16,7 +16,9 @@
         <div class="portfolio-item">
           <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal{{ forloop.index }}">
             <div class="portfolio-hover">
-              <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+              <div class="portfolio-hover-content">
+                <i class="mdi mdi-plus mdi-10x"></i>
+              </div>
             </div>
             <img class="img-fluid" src="{{ collection.image }}" alt="..." />
           </a>
@@ -57,7 +59,8 @@
                 </li>
               </ul>
               <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-              <i class="fas fa-xmark me-1"></i>
+              <!-- i class="fas fa-xmark me-1"></i -->
+              <i class="mdi mdi-close mdi-24px mx-2"></i>              
               Close Project
               </button>
             </div>

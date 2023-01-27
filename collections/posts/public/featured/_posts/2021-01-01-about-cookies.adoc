@@ -20,7 +20,7 @@ resource_options:
   - attic:
       padding_top:                      600
       padding_bottom:                   50
-      opacity:                          0.5
+#     opacity:                          0.5
       slides:
         - url:                          /assets/images/modules/attics/cookies-1920x1200.jpg
           alt:                          Photo by Miroslava on Unsplash

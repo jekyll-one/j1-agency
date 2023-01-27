@@ -23,7 +23,9 @@ regenerate:                             false
 resources:                              [ animate ]
 resource_options:
   - attic:
-      padding_top:                      400
+      padding_top:                      600
+      padding_bottom:                   50
+#     opacity:                          0.5
       slides:
         - url:                          /assets/images/agency/img/header-bg.jpg
           alt:                          Bootstrap Theme Agency

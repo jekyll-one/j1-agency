@@ -69,21 +69,21 @@ settings:
         # ICON settings
         #
         icons:
+          github:
+            enabled:                    true
+            href:                       https://github.com/jekyll-one/j1-agency
           facebook:
             enabled:                    true
             href:                       "#void"
           twitter:
             enabled:                    true
-            href:                       "https://twitter.com/jurgen_adams"
-          github:
-            enabled:                    true
-            href:                       "https://github.com/jekyll-one/j1-template-starter"
+            href:                       "#void"
           xing:
             enabled:                    true
-            href:                       "https://www.xing.com/profile/Juergen_Adams"
+            href:                       "#void"
           linkedin:
             enabled:                    true
-            href:                       "https://www.linkedin.com/in/juergenadams/"
+            href:                       "#void"
 
         # ----------------------------------------------------------------------
         # LEGAL settings
@@ -101,7 +101,7 @@ settings:
 
           - name:                       Impress
             legal:
-              enabled:                  true
+              enabled:                  false
 
               type:                     impress
               statement:                Impress
@@ -119,7 +119,7 @@ settings:
 
           - name:                       Comments
             legal:
-              enabled:                  true
+              enabled:                  false
 
               type:                     comments
               statement:                Comments
@@ -167,7 +167,7 @@ settings:
 
             title:                      Agency
             title_translation:          notranslate
-            tagline:                    popular bootstrap theme for jekyll
+            tagline:                    popular bootstrap v5 theme for jekyll
             text: >
                                         Agency is one of the most popular HTML themes based on
                                         Bootstrap V5 offered by Start Bootstrap. This theme

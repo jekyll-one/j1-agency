@@ -17,15 +17,15 @@ categories:                             [ About ]
 tags:                                   [ J1, Features ]
 
 image:
-  path:                                 /assets/images/modules/attics/1920x1280/j1-theme-mockup-1.jpg
+  path:                                 /assets/images/agency/img/header-bg.jpg
   width:                                1920
   height:                               1280
-  alt:                                  J1 Theme Mockup
+  alt:                                  Bootstrap Theme Agency
 
 comments:                               false
-fab_menu_id:                            page_ctrl
+fab_menu_id:                            open_toc_reload                         # page_ctrl
 scrollbar:                              false
-comments:                               true
+comments:                               false
 
 permalink:                              /pages/public/about/features/
 regenerate:                             false

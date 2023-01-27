@@ -426,8 +426,8 @@ strict_front_matter:                    false
 #
 sass:
   sass_dir:                             _sass
-  style:                                expanded                                # possible values: nested expanded compact compressed
-  verbose:                              true
+  style:                                compressed                              # possible values: nested expanded compact compressed
+# verbose:                              true
 
 # ------------------------------------------------------------------------------
 # WEBRICK Customizations

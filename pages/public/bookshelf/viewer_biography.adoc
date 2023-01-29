@@ -1,7 +1,7 @@
 ---
 title:                                  Biography
 tagline:                                Today's People
-date:                                   2020-11-03 12:00:00
+date:                                   2023-01-29 00:00:00
 description: >
                                         Jekyll Collections
 
@@ -10,7 +10,7 @@ tags:                                   [ Preview, Bookshelf ]
 
 fab_menu_id:                            open_toc
 
-permalink:                              /pages/public/collections/bookshelf/biography/
+permalink:                              /pages/public/bookshelf/biography/
 regenerate:                             true
 
 resources:                              []

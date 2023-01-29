@@ -14,7 +14,7 @@ image:
   height:                               1280
   alt:                                  Bootstrap Theme Agency
 
-fab_menu_id:                            open_toc_reload
+fab_menu_id:                            default
 comments:                               false
 scrollbar:                              false
 regenerate:                             false

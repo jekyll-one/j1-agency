@@ -88,7 +88,7 @@
 
        <div class="card-footer not-rounded r-text-200">
          <div class="card-footer-text">
-           <i class="mdi mdi-calendar-blank md-grey-900 mr-1"></i> {{article.date | localize: "%Y %B, %e"}}</i>
+           <i class="mdi mdi-calendar-blank md-grey-900 mr-1"></i> {{article.book.published}}</i>
 
            <!-- Cleanup categories by given blacklist -->
            <!-- Build element strings -->

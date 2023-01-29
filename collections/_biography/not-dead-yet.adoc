@@ -3,7 +3,7 @@ layout:                                 collection
 
 title:                                  Not Dead Yet
 tagline:                                Phil Collins - The Autobiography
-date:                                   2016-10-27 19:16:49
+date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         Phil Collins unvarnished story of the songs and shows, the hits and pans,
                                         his marriages and divorces
@@ -16,6 +16,7 @@ book:
   format:                               hardback
   pages:                                464
   publisher:                            Cornerstone
+  published:                            2016
   author:                               Phil Collins
   ISBN10:                               1780895127
   ISBN13:                               9781780895123

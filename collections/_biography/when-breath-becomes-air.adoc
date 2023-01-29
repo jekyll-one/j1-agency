@@ -3,7 +3,7 @@ layout:                                 collection
 
 title:                                  When Breath Becomes Air
 tagline:                                Paul Kalanithi was diagnosed with inoperable lung cancer ...
-date:                                   2016-10-27 19:16:49
+date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         When Breath Becomes Air chronicles Kalanithi's transformation
                                         from a medical student into a patient
@@ -16,6 +16,7 @@ book:
   format:                               hardback
   pages:                                256
   publisher:                            Vintage Publishing
+  published:                            2016
   author:                               Paul Kalanithi
   ISBN10:                               1847923674
   ISBN13:                               9781847923677

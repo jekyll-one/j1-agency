@@ -2,7 +2,7 @@
 layout:                                 collection
 title:                                  Becoming
 tagline:                                Memoir by the former First Lady of the USA
-date:                                   2018-11-13 19:16:49 +0100
+date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         Intimate, powerful, and inspiring memoir by the former
                                         First Lady of the USA
@@ -15,6 +15,7 @@ book:
   format:                               hardback
   pages:                                430
   publisher:                            Penguin Random House LLC
+  published:                            2018
   author:                               Michelle Obama
   ISBN10:                               0008128308
   ISBN13:                               978-3-442-31487-4

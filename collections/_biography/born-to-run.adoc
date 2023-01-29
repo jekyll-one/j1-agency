@@ -2,7 +2,7 @@
 layout:                                 collection
 title:                                  Born to Run
 tagline:                                A legendary Rock Star’s Memoir
-date:                                   2016-10-27 19:16:49 +0100
+date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         A book for workers and dreamers, parents and children,
                                         lovers and loners, artists, freaks or anyone who has ever
@@ -16,6 +16,7 @@ book:
   format:                               hardback
   pages:                                528
   publisher:                            Simon and Schuster Ltd.
+  published:                            2016
   author:                               Bruce Springsteen
   ISBN10:                               1471157792
   ISBN13:                               9781471157790

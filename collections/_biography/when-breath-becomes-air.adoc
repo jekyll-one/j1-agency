@@ -8,8 +8,8 @@ description: >
                                         When Breath Becomes Air chronicles Kalanithi's transformation
                                         from a medical student into a patient
 
-tags:                                   [ Memoirs, Neurosurgery, Life, Doctor ]
 categories:                             [ Book, Biography ]
+tags:                                   [ Medicine, Doctor ]
 
 book:
   cover:                                https://d3by36x8sj6cra.cloudfront.net/assets/images/book/large/9781/8479/9781847923677.jpg

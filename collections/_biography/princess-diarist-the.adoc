@@ -8,8 +8,8 @@ description: >
                                         recollection of what happened behind the scenes on
                                         one of the most famous film sets
 
-tags:                                   [ Memoirs, Films, Actors, Science, Fiction ]
 categories:                             [ Book, Biography ]
+tags:                                   [ Actor ]
 
 book:
   cover:                                https://d3by36x8sj6cra.cloudfront.net/assets/images/book/large/9780/5930/9780593077566.jpg

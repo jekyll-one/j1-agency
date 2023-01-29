@@ -6,8 +6,8 @@ date:                                   2016-10-27 19:16:49 +0100
 description: >
                                         Jeremy Paxman - Britain’s most incisive political interviewer.
 
-tags:                                   [ Memoirs, Political, Journalism ]
 categories:                             [ Book, Biography ]
+tags:                                   [ Political, Journalism ]
 
 book:
   cover:                                https://d3by36x8sj6cra.cloudfront.net/assets/images/book/large/9780/0081/9780008128302.jpg

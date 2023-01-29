@@ -8,8 +8,8 @@ description: >
                                         daughters and cousins - separated by forty years  of Soviet rule,
                                         and reunited after the fall of the Berlin Wall
 
-tags:                                   [ Memoirs, Historical, Autobiography ]
 categories:                             [ Book, Biography ]
+tags:                                   [ Historical ]
 
 book:
   cover:                                https://d20eq91zdmkqd.cloudfront.net/assets/images/book/large/9781/4087/9781408707265.jpg

@@ -7,8 +7,8 @@ description: >
                                         Intimate, powerful, and inspiring memoir by the former
                                         First Lady of the USA
 
-tags:                                   [ Memoirs, Political, Journalism ]
 categories:                             [ Book, Biography ]
+tags:                                   [ Political, Journalism ]
 
 book:
   cover:                                https://images-na.ssl-images-amazon.com/images/I/414JfiBCutL.jpg

@@ -8,8 +8,8 @@ description: >
                                         Phil Collins unvarnished story of the songs and shows, the hits and pans,
                                         his marriages and divorces
 
-tags:                                   [ Memoirs, Musicians ]
 categories:                             [ Book, Biography ]
+tags:                                   [ Musician ]
 
 book:
   cover:                                https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/large/9781/7808/9781780895123.jpg

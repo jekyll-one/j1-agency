@@ -55,17 +55,20 @@ successful songwriters of the pop music era.
 
 excerpt__end
 
+
 // Content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[[readmore]]
+[role="mt-5"]
 image:{{page.book.cover}}[width=350, role="mr-4 float-left"]
 
+[[readmore]]
 A drummer since almost before he could walk, Collins received on-the-job
 training in the seedy, thrilling bars and clubs of 1960s swinging London
-before finally landing the drum seat in Genesis. Later he would step into the
-spotlight on vocals after the departure of Peter Gabriel, and compose the songs
-that would rocket him to international solo fame with the release of Face Value
-and *In the Air Tonight*.
+before finally landing the drum seat in Genesis.
+
+Later he would step into the spotlight on vocals after the departure of
+Peter Gabriel, and compose the songs that would rocket him to international
+solo fame with the release of Face Value and *In the Air Tonight*.
 
 Whether he's recalling jamming with Eric Clapton and Robert Plant, pulling
 together a big band fronted by Tony Bennett, playing twice at Live Aid, or

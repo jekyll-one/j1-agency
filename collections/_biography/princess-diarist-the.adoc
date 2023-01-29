@@ -59,16 +59,18 @@ excerpt__end
 
 // Content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[[readmore]]
+[role="mt-5"]
 image:{{page.book.cover}}[width=350, role="mr-4 float-left"]
 
+[[readmore]]
 With these excerpts from her handwritten notebooks, The Princess Diarist is
 Fisher's intimate and revealing recollection of what happened on one of the
-most famous film sets of all time-and what developed behind the scenes. And
-today, as she reprises her most iconic role for the latest Star Wars trilogy,
-Fisher also ponders the joys and insanity of celebrity, and the absurdity of
-a life spawned by Hollywood royalty, only to be surpassed by her own outer-space
-royalty.
+most famous film sets of all time-and what developed behind the scenes.
+
+And today, as she reprises her most iconic role for the latest Star Wars
+trilogy, Fisher also ponders the joys and insanity of celebrity, and the
+absurdity of a life spawned by Hollywood royalty, only to be surpassed by
+her own outer-space royalty.
 
 Laugh-out-loud hilarious and endlessly quotable, The Princess Diarist brims
 with the candour and introspection of a diary while offering shrewd insight

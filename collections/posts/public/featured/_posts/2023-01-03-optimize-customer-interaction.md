@@ -1,8 +1,8 @@
 ---
 layout:                                 post
 
-title:                                  Site Performance
-tagline:                                Optimize Interaction to Next Paint
+title:                                  Performance
+tagline:                                Optimize Customer Interaction
 # date:                                 2023-01-03 09:33:20 +0000
 
 categories:                             [ Development ]
@@ -16,8 +16,7 @@ image:
 
 fab_menu_id:                            open_toc_reload
 comments:                               false
-page_navigation:                        true
-
+scrollbar:                              false
 regenerate:                             false
 
 resources:                              [ animate ]

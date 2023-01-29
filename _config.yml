@@ -47,13 +47,13 @@
 #   values:                             development|production
 #   default:                            production
 #
-environment:                            production
+environment:                            development
 
 # version
 # ------------------------------------------------------------------------------
 # Sets the build version of J1 Theme Gem
 #
-version:                                2023.0.3
+version:                                2023.0.4
 
 # version
 # ------------------------------------------------------------------------------
@@ -249,7 +249,7 @@ keywords: >
                                         j1, template, jekyllone, comment
 
 webmaster:
-  email:                                webmaster@agency_studio.com
+  email:                                webmaster@agency.jekyll.one
 
 # Crawling/Indexing ENABLED for default. Settings managed page-wise using
 # frontmatter defaults or by page default settings to make sure that only
@@ -284,15 +284,6 @@ favicon:
 # ------------------------------------------------------------------------------
 # LOCATION configuration
 # Set uri, files and path specific configurations
-
-# ------------------------------------------------------------------------------
-# Agency configuration
-
-collections:
-  team:
-    output: true
-  portfolio:
-    output: true
 
 # ------------------------------------------------------------------------------
 # URI configuration
@@ -344,8 +335,8 @@ permalink:                              pretty
 #
 # MAP file:                             https://agency.jekyll.one/sitemap.xml
 #
-# url:                                  "http://localhost:20000"
-url:                                    "https://agency.jekyll.one"
+url:                                    http://localhost:20000
+# url:                                  https://agency.jekyll.one
 
 # The subpath of your site, e.g. /blog/. Used in conjunction with
 # site.url (see above) when you want a link to something with the
@@ -545,7 +536,7 @@ whitelist:
 
 
 # ==============================================================================
-# 5. SEO ans Social Media settings (gloal)
+# 5. SEO and Social Media settings (gloal)
 #
 # ------------------------------------------------------------------------------
 #
@@ -593,6 +584,28 @@ webmaster_verifications:
 #
 excerpt_separator:                      excerpt__end
 excerpt_truncate_words:                 100
+
+# ------------------------------------------------------------------------------
+# COLLECTION settings
+# See: https://jekyllrb.com/docs/collections/#collections
+#
+collections:
+
+  # ----------------------------------------------------------------------------
+  # Agency
+  #
+  team:
+    output: true
+
+  portfolio:
+    output: true
+
+  # ----------------------------------------------------------------------------
+  # Book shelf
+  #
+  biography:
+    output:                             true
+    permalink:                          /collections/public/:collection/:name/
 
 # ------------------------------------------------------------------------------
 # FRONTMATTER defaults
@@ -649,20 +662,6 @@ defaults:
         height:                         800
         alt:                            J1 Theme Home
 
-      robots:
-        index:                          true
-        follow:                         true
-
-      personalization:                  false
-      exclude_from_search:              false
-
-      youtube:                          true
-      vimeo:                            true
-
-      toc:                              true
-      fab_menu_id:                      page_ctrl
-      scrollbar:                        false
-
       icons:
         family:                         MDI
         color:                          md-blue
@@ -670,6 +669,19 @@ defaults:
 
       images:
         dir:                            /assets/images/pages
+
+      robots:
+        index:                          true
+        follow:                         true
+
+      toc:                              true
+      fab_menu_id:                      page_ctrl
+      scrollbar:                        false
+      personalization:                  false
+      exclude_from_search:              false
+
+      youtube:                          true
+      vimeo:                            true
 
       resource_options:
         - toccer:
@@ -705,13 +717,13 @@ defaults:
         index:                          true
         follow:                         true
 
+      toc:                              true
+      fab_menu_id:                      open_toc_reload
+      scrollbar:                        false
+      page_navigation:                  true
       personalization:                  false
       exclude_from_search:              false
       series:                           false
-
-      toc:                              true
-      fab_menu_id:                      default
-      scrollbar:                        false
 
       resource_options:
         - toccer:
@@ -743,16 +755,30 @@ defaults:
         index:                          true
         follow:                         true
 
+      toc:                              true
+      fab_menu_id:                      open_toc_reload
+      scrollbar:                        false
+      page_navigation:                  true
       personalization:                  false
       exclude_from_search:              false
-
-      toc:                              true
-      fab_menu_id:                      default
-      scrollbar:                        false
 
       resource_options:
         - toccer:
             collapseDepth:              3
+
+  # ----------------------------------------------------------------------------
+  # Collections
+  #
+
+  # ----------------------------------------------------------------------------
+  # Biography (Book Shelf)
+  #
+  - scope:
+      type:                             biography
+      path:                             collections/_biography
+
+    values:
+      layout:                           page
 
 
 # ==============================================================================

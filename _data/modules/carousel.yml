@@ -306,6 +306,64 @@ settings:
           itemsDesktopSmall:            "[979,3]"
 
     # --------------------------------------------------------------------------
+    # AGENCY clients
+    #
+    - show:
+        enabled:                        true
+        provider:                       j1
+        id:                             agency_clients
+        type:                           image
+        images_path:                    /assets/images/agency/img/customers
+        images:                         [
+                                          client-1.png,
+                                          client-2.png,
+                                          client-3.png,
+                                          client-4.png,
+                                          client-5.png,
+                                          client-6.png,
+                                          client-7.png
+                                        ]
+        links:                          [
+                                          "#void", "#void", "#void",
+                                          "#void", "#void", "#void",
+                                          "#void"
+                                        ]
+        options:
+          autoPlay:                     3000
+          items:                        4
+          autoHeight :                  true
+          pagination:                   false
+          paginationNumbers:            false
+          itemsDesktop:                 "[1199,3]"
+          itemsDesktopSmall:            "[979,3]"
+
+    # --------------------------------------------------------------------------
+    # AGENCY partners
+    #
+    - show:
+        enabled:                        true
+        provider:                       j1
+        id:                             agency_partners
+        type:                           image
+        images_path:                    /assets/images/agency/img/partners/scalable
+        images:                         [
+                                          facebook.svg,
+                                          google.svg,
+                                          ibm.svg,
+                                          microsoft.svg
+
+                                        ]
+        links:                          [ "#void", "#void", "#void", "#void" ]
+        options:
+          autoPlay:                     3000
+          items:                        1
+          autoHeight :                  false
+          pagination:                   false
+          paginationNumbers:            false
+          itemsDesktop:                 "[1199,3]"
+          itemsDesktopSmall:            "[979,3]"
+
+    # --------------------------------------------------------------------------
     # demo_oneslide
     #
     - show:

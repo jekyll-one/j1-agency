@@ -13,6 +13,7 @@ image:
 
 fab_menu_id:                            open_toc_reload
 comments:                               false
+scrollbar:                              false
 regenerate:                             false
 
 resources:                              [ animate, lightbox ]

@@ -60,15 +60,15 @@ settings:
         pagePath:                       /assets/data/news_panel_posts/page
         elementScroll:                  true                                    # false = window, true = container
         scrollOffset:                   100
-        lastPage:                       2                                       # 1 page "equals" 2 posts
-        infoLastPage:                   false
+        lastPage:                       1                                       # 1 page "equals" 2 posts
+        infoLastPage:                   true
 
         lastPageInfo_en: >
-                                        More articles can be found with the
-                                        <a href="/pages/public/blog/navigator/" class="link-no-decoration">Blog Navigator</a>
+                                        More articles on the
+                                        <a href="/pages/public/blog/navigator/" class="link-no-decoration">Agency Blog</a>
         lastPageInfo_de: >
                                         Weitere Artikel finden Sie im
-                                        <a href="/pages/public/blog/navigator/" class="link-no-decoration">Blog Navigator</a>
+                                        <a href="/pages/public/blog/navigator/" class="link-no-decoration">Agency Blog</a>
 
     # --------------------------------------------------------------------------
     # Blog Navigator Preview (Timeline)

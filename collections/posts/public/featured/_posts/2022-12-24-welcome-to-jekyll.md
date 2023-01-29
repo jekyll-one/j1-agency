@@ -17,7 +17,6 @@ image:
 fab_menu_id:                            open_toc_reload
 comments:                               false
 scrollbar:                              false
-toc:                                    false
 regenerate:                             false
 
 resources:                              [ animate ]

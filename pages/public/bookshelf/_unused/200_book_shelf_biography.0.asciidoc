@@ -1,0 +1,121 @@
+---
+title:                                  Biography
+tagline:                                Today's People
+date:                                   2020-11-03 12:00:00
+description: >
+                                        Jekyll Collections
+
+categories:                             [ Jekyll, Collection ]
+tags:                                   [ Preview, Bookshelf ]
+
+fab_menu_id:                            open_toc
+
+permalink:                              /pages/public/collections/bookshelf/biography/
+regenerate:                             true
+
+resources:                              []
+resource_options:
+  - attic:
+      padding_top:                      400
+      padding_bottom:                   50
+      opacity:                          0.5
+      slides:
+        - url:                          /assets/images/modules/attics/giammarco-boscaro-1920x1280.jpg
+          alt:                          giammarco-boscaro-1920x1280
+---
+
+// Page Initializer
+// =============================================================================
+// Enable the Liquid Preprocessor
+:page-liquid:
+
+// Set page (local) attributes here
+// -----------------------------------------------------------------------------
+// :page--attr:                         <attr-value>
+
+{% comment %} Liquid procedures
+-------------------------------------------------------------------------------- {% endcomment %}
+{% capture create_collection_article_preview %}themes/{{site.template.name}}/procedures/collections/create_collection_article_preview.proc{% endcapture %}
+
+{% comment %} Debugging
+-------------------------------------------------------------------------------- {% endcomment %}
+{% comment %} site.biography:  {{ site.biography | debug }} {% endcomment %}
+
+
+// Content
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[[navigator]]
+== Biography
+
+lorem:sentences[5]
+
+////
+++++
+<article class="card raised-z0 mb-5">
+
+  <div class="card-header bg-primary">
+    <h3 id="39130" class="card-header bg-primary notranslate">
+      A Life in Questions
+      <!-- span>Jekyll For Everyone</span -->
+    </h3>
+  </div>
+
+  <div class="row mx-0">
+
+    <div class="col-md-4 img-bg--fill px-0" style="border-right: 1px dotted rgba(0, 0, 0, 0.25);
+      filter: grayscale(1) contrast(1) brightness(0.7);
+      background-image: url(https://d3by36x8sj6cra.cloudfront.net/assets/images/book/large/9780/0081/9780008128302.jpg);">
+    </div>
+
+    <div class="col-md-8 p-0">
+
+      <div class="card-body r-text-300 mt-0">
+        <div class="paragraph dropcap">
+          <p>
+            The witty, incisive and frank memoirs from the legend of
+            Newsnight and long-standing quiz master of University Challenge.
+            Filled with views, opinions and stories from 4 decades in front
+            of the camera. Jeremy Paxman is Britain’s bravest, most incisive
+            political interviewer.
+
+          </p>
+        </div>
+        <div>
+          <p>
+            The no-nonsense star of BBC Newsnight, Paxman is a supreme inquisitor, a master at skewering mammoth egos with his relentless grilling. Few figures in public life have escaped. From John Major to Theresa May, from Tony Blair to Ed Miliband, Paxman had them quaking in their boots.
+          </p>
+        </div>
+      </div>
+
+      <div class="card-footer not-rounded r-text-200">
+        <div class="card-footer-text">
+          <i class="mdi mdi-calendar-blank md-grey-900 mr-1"></i>2022 October, 13
+          <!-- Cleanup categories by given blacklist -->
+          <!-- Build element strings -->
+          <p class="result-item-text small mb-3 notranslate">
+            <i class="mdi mdi-tag-text-outline mdi-18px mr-1"></i>
+            <span class="sr-categories">Jekyll</span>
+            <br>
+            <i class="mdi mdi-tag mdi-18px mr-1"></i>
+            <span class="sr-tags">Theme</span>
+          </p>
+        </div>
+        <a class="card-link md-grey-900 text-lowercase" href="/collections/public/biography/a-life-in-questions/">
+          read · Jeremy Paxman - Britain’s most incisive political interviewer
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</article>
+++++
+////
+
+++++
+<div class="row mb-4">
+  <div class="col-md-12 col-xs-12">
+    {% include {{create_collection_article_preview}} collection=site.biography %}
+  </div>
+</div>
+++++

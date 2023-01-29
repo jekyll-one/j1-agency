@@ -321,16 +321,16 @@ lanes:
       file:                             portfolio.html
 
   # ----------------------------------------------------------------------------
-  # AGENCY about
+  # AGENCY clients
   #
   - lane:
       enabled:                          true
-      id:                               agency_about
+      id:                               agency_clients
       region:                           body-main
       type:                             sync
       base:                             _includes/custom/agency
-      path:                             static
-      file:                             about.html
+      path:                             templates
+      file:                             clients.html
 
   # ----------------------------------------------------------------------------
   # AGENCY team
@@ -345,16 +345,16 @@ lanes:
       file:                             team.html
 
   # ----------------------------------------------------------------------------
-  # AGENCY clients
+  # AGENCY partners
   #
   - lane:
       enabled:                          true
-      id:                               agency_clients
+      id:                               agency_partners
       region:                           body-main
       type:                             sync
       base:                             _includes/custom/agency
-      path:                             static
-      file:                             clients.html
+      path:                             templates
+      file:                             partners.html
 
   # ----------------------------------------------------------------------------
   # AGENCY contact
@@ -388,6 +388,18 @@ lanes:
       region:                           body-main
       type:                             async
       properties:                       elevated-z0
+
+  # ----------------------------------------------------------------------------
+  # AGENCY about
+  #
+  - lane:
+      enabled:                          true
+      id:                               agency_about
+      region:                           body-main
+      type:                             sync
+      base:                             _includes/custom/agency
+      path:                             static
+      file:                             about.html
 
 # ------------------------------------------------------------------------------
 # END config

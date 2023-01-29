@@ -19,26 +19,28 @@
 # TOP-LEVEL items (NO sub-menu)
 #
 - item:                                 SERVICES
-  href:                                 "#services"
+  href:                                 "/#services"
 
 - item:                                 PORTFOLIO
-  href:                                 "#portfolio"
+  href:                                 "/#portfolio"
 
-- item:                                 ABOUT
-  href:                                 "#about"
+- item:                                 CLIENTS
+  href:                                 "/#clients"
 
 - item:                                 TEAM
-  href:                                 "#team"
+  href:                                 "/#team"
+
+- item:                                 PARTNERS
+  href:                                 "/#partners"
 
 - item:                                 CONTACT
-  href:                                 "#contact"
+  href:                                 /#contact"
 
 # ------------------------------------------------------------------------------
 # Menu BLOG
 #
-
 - item:                                 BLOG
-  href:                                 "#home_news_panel"
+  href:                                 "/#home_news_panel"
 
 # - item:                                 BLOG
 #   sublevel:
@@ -54,6 +56,15 @@
 #     - title:                            Archive
 #       href:                             /pages/public/blog/navigator/archive/allview/
 #       icon:                             archive
+
+# - item:                                 ABOUT
+#   href:                                 "#about"
+
+# ------------------------------------------------------------------------------
+# Menu Bookshelf
+#
+# - item:                                 BOOKS
+#   href:                                 pages/public/collections/bookshelf/biography/
 
 # ------------------------------------------------------------------------------
 # Menu Themes

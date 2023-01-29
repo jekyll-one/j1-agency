@@ -45,9 +45,10 @@ resource_options:
 // Content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [[navigator]]
-== Biography
+lorem:sentences[8]
 
-lorem:sentences[5]
+[role="mb-6"]
+lorem:sentences[3]
 
 ++++
 <div class="row mb-4">

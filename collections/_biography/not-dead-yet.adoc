@@ -6,7 +6,8 @@ tagline:                                Phil Collins - The Autobiography
 date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         Phil Collins unvarnished story of the songs and shows, the hits and pans,
-                                        his marriages and divorces
+                                        his marriages and divorces. This is the story of his epic career, from
+                                        child actor to one of the most successful songwriters of the pop music era.
 
 categories:                             [ Book, Biography ]
 tags:                                   [ Musician ]
@@ -22,8 +23,7 @@ book:
   ISBN13:                               9781780895123
   rank:                                 1367
 
-toc:                                    false
-
+scrollbar:                              false
 regenerate:                             false
 
 resources:                              []

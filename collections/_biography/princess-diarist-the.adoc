@@ -6,7 +6,10 @@ date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         Carrie Fisher's intimate, hilarious and revealing
                                         recollection of what happened behind the scenes on
-                                        one of the most famous film sets
+                                        one of the most famous film sets. Today, her fame as an
+                                        author, actress, and pop-culture icon is indisputable,
+                                        but in 1977, Carrie Fisher was just a (sort-of) regular
+                                        teenager.
 
 categories:                             [ Book, Biography ]
 tags:                                   [ Actor ]
@@ -22,8 +25,7 @@ book:
   ISBN13:                               9780593077566
   rank:                                 5690
 
-toc:                                    false
-
+scrollbar:                              false
 regenerate:                             false
 
 resources:                              []

@@ -6,7 +6,7 @@ date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         History of three generations of her family - mothers, sisters,
                                         daughters and cousins - separated by forty years  of Soviet rule,
-                                        and reunited after the fall of the Berlin Wall
+                                        and reunited after the fall of the Berlin Wall.
 
 categories:                             [ Book, Biography ]
 tags:                                   [ Historical ]
@@ -22,8 +22,7 @@ book:
   ISBN13:                               9781408707265
   rank:                                 106052
 
-toc:                                    false
-
+scrollbar:                              false
 regenerate:                             false
 
 resources:                              []

@@ -6,7 +6,7 @@ date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         A book for workers and dreamers, parents and children,
                                         lovers and loners, artists, freaks or anyone who has ever
-                                        wanted to be baptized in the holy river of rock and roll
+                                        wanted to be baptized in the holy river of rock and roll.
 
 categories:                             [ Book, Biography ]
 tags:                                   [ Musician ]
@@ -22,8 +22,7 @@ book:
   ISBN13:                               9781471157790
   rank:                                 23
 
-toc:                                    false
-
+scrollbar:                              false
 regenerate:                             false
 
 resources:                              []
@@ -60,7 +59,7 @@ excerpt__end
 
 // Content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[role="mt-5"]
+[role="mt-5]
 image:{{page.book.cover}}[width=350, role="mr-4 float-left"]
 
 [[readmore]]
@@ -78,8 +77,8 @@ loners, artists, freaks or anyone who has ever wanted to be baptized in the
 holy river of rock and roll. Rarely has a performer told his own story with
 such force and sweep.
 
-Like many of his songs (*Thunder Road*, *Badlands*, *Darkness on the Edge of Town*,
-*The River*, *Born in the USA*, *The Rising*, and *The Ghost of Tom Joad*,
-to name just a few), Bruce Springsteen's autobiography is written with the
+Many of his songs like *Thunder Road*, *Badlands*, *The River*,
+*Born in the USA*, *The Rising*, and *The Ghost of Tom Joad*
+— to name just a few — Bruce Springsteen's autobiography is written with the
 lyricism of a singular songwriter and the wisdom of a man who has thought
 deeply about his experiences.

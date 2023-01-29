@@ -5,7 +5,9 @@ tagline:                                Memoir by the former First Lady of the U
 date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         Intimate, powerful, and inspiring memoir by the former
-                                        First Lady of the USA
+                                        First Lady of the USA. In a life filled with meaning and
+                                        accomplishment, Michelle Obama has emerged as one of the
+                                        most iconic and compelling women of our era.
 
 categories:                             [ Book, Biography ]
 tags:                                   [ Political, Journalism ]
@@ -21,8 +23,7 @@ book:
   ISBN13:                               978-3-442-31487-4
   rank:                                 817
 
-toc:                                    false
-
+scrollbar:                              false
 regenerate:                             false
 
 resources:                              []

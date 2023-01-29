@@ -3,7 +3,10 @@ title:                                  Biography
 tagline:                                Today's People
 date:                                   2023-01-29 00:00:00
 description: >
-                                        Jekyll Collections
+                                        Today's people is a collection contains the biography's
+                                        of celebrities well known by most of us. Find the books issued
+                                        by musicans, actors and more.
+
 
 categories:                             [ Jekyll, Collection ]
 tags:                                   [ Preview, Bookshelf ]

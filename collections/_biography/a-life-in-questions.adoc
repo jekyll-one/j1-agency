@@ -1,7 +1,7 @@
 ---
 layout:                                 collection
 title:                                  A Life in Questions
-tagline:                                Jeremy Paxman - Britain’s most incisive political interviewer
+tagline:                                Memoirs from the legend of Newsnight 
 date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         Jeremy Paxman - Britain’s most incisive political interviewer.
@@ -22,11 +22,19 @@ book:
   ISBN13:                               9780008128302
   rank:                                 16817
 
+fab_menu_id:                            default
 scrollbar:                              false
 regenerate:                             false
 
 resources:                              []
-resource_options:                       []
+resource_options:
+  - attic:
+      padding_top:                      400
+      padding_bottom:                   50
+      opacity:                          0.5
+      slides:
+        - url:                          /assets/images/modules/attics/giammarco-boscaro-1920x1280.jpg
+          alt:                          giammarco-boscaro-1920x1280
 ---
 
 // Page Initializer

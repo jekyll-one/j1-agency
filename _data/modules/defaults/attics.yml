@@ -212,7 +212,7 @@ defaults:
         enabled:                        false
 
         id:                             attic_text
-        layout:                         [ collection, app, raw ]
+        layout:                         [ app, raw ]
         notranslate:                    true
 
 # ------------------------------------------------------------------------------

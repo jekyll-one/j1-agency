@@ -1,8 +1,8 @@
 ---
 layout:                                 collection
 
-title:                                  When Breath Becomes Air
-tagline:                                Paul Kalanithi was diagnosed with inoperable lung cancer ...
+title:                                  Paul Kalanithi
+tagline:                                Diagnosed with inoperable lung cancer
 date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         When Breath Becomes Air chronicles Kalanithi's transformation
@@ -24,11 +24,19 @@ book:
   ISBN13:                               9781847923677
   rank:                                 40
 
+fab_menu_id:                            default
 scrollbar:                              false
 regenerate:                             false
 
 resources:                              []
-resource_options:                       []
+resource_options:
+  - attic:
+      padding_top:                      400
+      padding_bottom:                   50
+      opacity:                          0.5
+      slides:
+        - url:                          /assets/images/modules/attics/giammarco-boscaro-1920x1280.jpg
+          alt:                          giammarco-boscaro-1920x1280
 ---
 
 // Page Initializer

@@ -1,7 +1,7 @@
 ---
 layout:                                 collection
 title:                                  A Life in Questions
-tagline:                                Memoirs from the legend of Newsnight 
+tagline:                                Memoirs from the legend of Newsnight
 date:                                   2023-01-27 00:00:00 +0100
 description: >
                                         Jeremy Paxman - Britain’s most incisive political interviewer.
@@ -66,7 +66,7 @@ excerpt__end
 // Content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [role="mt-5"]
-image:{{page.book.cover}}[width=350, role="mr-4 float-left"]
+image:{{page.book.cover}}[width=350, role="mr-4 mb-4 float-left"]
 
 [[readmore]]
 His working life has been defined by questions. *Why is this bastard
@@ -86,13 +86,13 @@ News. Filled with candid stories about the great, the good and the rotters
 that have crossed his path, his memoirs are as magnetic to read as Paxman
 is to watch.
 
+[role="mt-7"]
 Candid, uncompromising, compassionate, reflective and astute, he writes
 of the principles that have governed his professional life, the inner
 workings of the BBC, the role of journalists in political debate, the
 scandals and rows he's been part of, the books he has written and the
 series he has made.
 
-[role="mt-6"]
 In a book that tells some terrific stories and laughs
 at much of the silliness in the world, A Life in Questions charts the life
 of the greatest political interviewer of our time.

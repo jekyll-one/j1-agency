@@ -67,7 +67,7 @@ excerpt__end
 // Content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [role="mt-5"]
-image:{{page.book.cover}}[width=350, role="mr-4 float-left"]
+image:{{page.book.cover}}[width=350, role="mr-4 mb-4 float-left"]
 
 [[readmore]]
 Hanna fell in love and moved to America. She made many attempts to establish
@@ -86,6 +86,7 @@ Though separated by only a few miles, Nina and her relatives led entirely
 different lives. Once the Berlin Wall came down, and the families were
 reunited, Nina Willner discovered an extraordinary story.
 
+[role="mt-8"]
 In Forty Autumns she vividly brings to life many accounts of courage and
 survival, set against the backdrop of four decades that divided a nation
 and the world.

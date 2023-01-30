@@ -67,7 +67,7 @@ excerpt__end
 // Content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [role="mt-5"]
-image:{{page.book.cover}}[width=350, role="mr-4 float-left"]
+image:{{page.book.cover}}[width=350, role="mr-4 mb-4 float-left"]
 
 [[readmore]]
 Along the way, she showed us a few dance moves, crushed Carpool Karaoke, and

@@ -22,7 +22,7 @@ regenerate:                             false
 resources:                              [ animate ]
 resource_options:
   - attic:
-      padding_top:                      600
+      padding_top:                      550
       padding_bottom:                   50
 #     opacity:                          0.5
       slides:

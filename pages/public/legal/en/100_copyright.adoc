@@ -52,6 +52,7 @@ resource_options:
 // :page--attr:                         <attr-value>
 :disclaimer:                            true
 :legal-warning:                         false
+
 //  Load Liquid procedures
 // -----------------------------------------------------------------------------
 {% capture load_attributes %}themes/{{site.template.name}}/procedures/global/attributes_loader.proc{%endcapture%}

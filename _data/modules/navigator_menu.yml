@@ -37,6 +37,12 @@
 - item:                                 CONTACT
   href:                                 /#contact
 
+- item:                                 BLOCK
+  href:                                 /#home_news_panel
+
+- item:                                 ABOUT
+  href:                                 /#about
+
 - item:                                 THEME
   href:                                 /pages/public/previewer/agency/
 

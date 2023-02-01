@@ -18,30 +18,42 @@
 # ------------------------------------------------------------------------------
 # TOP-LEVEL items (NO sub-menu)
 #
+
 - item:                                 SERVICES
-  href:                                 "/#services"
+  href:                                 /#services
 
 - item:                                 PORTFOLIO
-  href:                                 "/#portfolio"
+  href:                                 /#portfolio
 
 - item:                                 CLIENTS
-  href:                                 "/#clients"
+  href:                                 /#clients
 
 - item:                                 TEAM
-  href:                                 "/#team"
+  href:                                 /#team
 
 - item:                                 PARTNERS
-  href:                                 "/#partners"
+  href:                                 /#partners
 
 - item:                                 CONTACT
-  href:                                 /#contact"
+  href:                                 /#contact
+
+- item:                                 THEME
+  href:                                 /pages/public/previewer/agency/
 
 # ------------------------------------------------------------------------------
-# Menu BLOG
+# Menu Bookshelf
 #
-- item:                                 BLOG
-  href:                                 "/#home_news_panel"
+# - item:                                 BOOKS
+#   href:                                 pages/public/collections/bookshelf/biography/
 
+
+# ------------------------------------------------------------------------------
+# MENU-LEVEL items (sub-menu)
+#
+
+# ------------------------------------------------------------------------------
+# Menu Blog Navigator
+#
 # - item:                                 BLOG
 #   sublevel:
 #     - title:                            Blog Navigator
@@ -56,31 +68,6 @@
 #     - title:                            Archive
 #       href:                             /pages/public/blog/navigator/archive/allview/
 #       icon:                             archive
-
-# - item:                                 ABOUT
-#   href:                                 "#about"
-
-# ------------------------------------------------------------------------------
-# Menu Bookshelf
-#
-# - item:                                 BOOKS
-#   href:                                 pages/public/collections/bookshelf/biography/
-
-# ------------------------------------------------------------------------------
-# Menu Themes
-#
-- item:                                 THEMES
-  theme_select:
-    - preview:                          enabled
-      title:                            Preview
-      href:                             /pages/public/previewer/current_theme/
-      icon:                             eye
-    - local_themes:                     enabled
-      title:                            Jekyll One
-      icon:                             alpha-j-box
-    - bootswatch_themes:                enabled
-      title:                            Bootswatch
-      icon:                             bootstrap
 
 # ------------------------------------------------------------------------------
 # END config

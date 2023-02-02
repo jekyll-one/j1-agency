@@ -348,7 +348,7 @@ lanes:
   # AGENCY partners
   #
   - lane:
-      enabled:                          true
+      enabled:                          false
       id:                               agency_partners
       region:                           body-main
       type:                             sync

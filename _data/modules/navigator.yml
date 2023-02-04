@@ -132,7 +132,7 @@ settings:
 
                   links:
                     - title:            Name
-                      icon:             face
+                      icon:             theme-light-dark
                       value:            ??theme-name
                       href:             /pages/public/previewer/current_theme/
                       target:           none

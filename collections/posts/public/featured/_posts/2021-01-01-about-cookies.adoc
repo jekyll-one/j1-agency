@@ -6,10 +6,10 @@ categories:                             [ Technology ]
 tags:                                   [ Cookies ]
 
 image:
-  path:                                 /assets/images/modules/attics/cookies-1920x1200.jpg
+  path:                                 /assets/images/modules/attics/1920x1280/sj.jpg
   width:                                1920
   height:                               1280
-  alt:                                  Cookies - Good to know
+  alt:                                  Photo by SJ on Unsplash
 
 fab_menu_id:                            open_toc_reload
 comments:                               false
@@ -20,15 +20,13 @@ resources:                              [ animate ]
 resource_options:
   - attic:
       padding_top:                      550
-      padding_bottom:                   50
-#     opacity:                          0.5
       slides:
-        - url:                          /assets/images/modules/attics/cookies-1920x1200.jpg
-          alt:                          Photo by Miroslava on Unsplash
+        - url:                          /assets/images/modules/attics/1920x1280/sj.jpg
+          alt:                          Photo by SJ on Unsplash
           badge:
             type:                       unsplash
-            author:                     Miroslava
-            href:                       https://unsplash.com/@miroslava
+            author:                     SJ
+            href:                       https://unsplash.com/de/@sjcbrn
 ---
 
 // Page Initializer
@@ -51,6 +49,10 @@ Is it needed for visitors to know what cookies are about? No doubts, you're
 requested to inform - in Europe for legal reasons. All users visiting websites
 are bothered all the time to accept cookies. For good reasons.
 
+The cookie allows the website to remember your actions or preferences over
+time. All modern browsers support cookies, but users can set their browsers
+to decline them and can delete them whenever they like. Good to know.
+
 excerpt__end
 
 //  Load Liquid procedures
@@ -71,10 +73,7 @@ excerpt__end
 == What are cookies technically
 
 In short: a  cookie is a small piece of data that a website asks your
-browser to store on your computer or mobile device. The cookie allows the
-website to "remember" your actions or preferences over time. All modern
-browsers support cookies, but users can set their browsers to decline them
-and can delete them whenever they like. Good to know.
+browser to store on your computer or mobile device.
 
 Websites mainly use cookies for:
 

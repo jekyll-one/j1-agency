@@ -31,8 +31,8 @@
 - item:                                 TEAM
   href:                                 /#team
 
-# - item:                                 PARTNERS
-#   href:                                 /#partners
+- item:                                 PARTNERS
+  href:                                 /#partners
 
 - item:                                 CONTACT
   href:                                 /#contact

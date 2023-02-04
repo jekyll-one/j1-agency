@@ -6,10 +6,10 @@ categories:                             [ Jekyll ]
 tags:                                   [ Theme ]
 
 image:
-  path:                                 /assets/images/modules/attics/machine-generator-1920x1280.jpg
+  path:                                 /assets/images/modules/attics/1920x1280/peter-herrmann.jpg
   width:                                1920
   height:                               1280
-  alt:                                  Site Generators
+  alt:                                  Photo by Peter Herrmann on Unsplash
 
 fab_menu_id:                            open_toc_reload
 comments:                               false
@@ -20,15 +20,13 @@ resources:                              [ animate, lightbox ]
 resource_options:
   - attic:
       padding_top:                      550
-      padding_bottom:                   50
-#     opacity:                          0.5
       slides:
-        - url:                          /assets/images/modules/attics/machine-generator-1920x1280.jpg
-          alt:                          Photo by Isis Françal on Unsplash
+        - url:                          /assets/images/modules/attics/1920x1280/peter-herrmann.jpg
+          alt:                          Photo by Peter Herrmann on Unsplash
           badge:
             type:                       unsplash
-            author:                     Isis França
-            href:                       https://unsplash.com/@isisfra
+            author:                     Peter Herrmann
+            href:                       https://unsplash.com/de/@tama66
 ---
 
 // Page Initializer
@@ -47,6 +45,11 @@ This article highlights the top OpenSource Projects providing static site
 generators (SSG) in many different programming languages. You'll find Jekyll
 one of them. Look at the top open-source SSGs if a full-blown CMS is needed
 for your project.
+
+For many websites, dynamic page generation by an CMS is entirely
+unnecessary and adds unwanted risks in terms of complexity, performance
+losses, and security issues. Statically build web pages is often the better
+solution.
 
 excerpt__end
 

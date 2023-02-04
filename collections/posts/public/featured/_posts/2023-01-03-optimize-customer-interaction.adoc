@@ -9,10 +9,10 @@ categories:                             [ Development ]
 tags:                                   [ Performance, Web Vitals ]
 
 image:
-  path:                                 /assets/images/modules/attics/1920x1280/melanie-deziel.jpg
+  path:                                 /assets/images/modules/attics/1920x1280/nadim-merrikh.jpg
   width:                                1920
   height:                               1280
-  alt:                                  Photo by Melanie Deziel on Unsplash
+  alt:                                  Photo by Nadim Merrikh on Unsplash
 
 fab_menu_id:                            default
 comments:                               false
@@ -22,16 +22,17 @@ regenerate:                             false
 resources:                              [ animate ]
 resource_options:
   - attic:
-      opacity:                          0.5
+      padding_top:                      550
       slides:
-        - url:                          /assets/images/modules/attics/1920x1280/melanie-deziel.jpg
-          alt:                          Photo by Melanie Deziel on Unsplash
+        - url:                          /assets/images/modules/attics/1920x1280/nadim-merrikh.jpg
+          alt:                          Photo by Nadim Merrikh on Unsplash
           alignY:                       0.3
           badge:
             type:                       unsplash
-            author:                     Melanie Deziel
-            href:                       https://unsplash.com/@storyfuel
+            author:                     Nadim Merrikh
+            href:                       https://unsplash.com/de/@merrikh
 ---
+
 // Page Initializer
 // =============================================================================
 // Enable the Liquid Preprocessor
@@ -46,9 +47,10 @@ Praesent luctus vehicula dignissim. Nunc in magna at lacus elementum auctor.
 Vestibulum lobortis fringilla viverra. Quisque consequat est sit amet libero
 viverra sodales. Etiam accumsan sagittis sagittis. Nam pulvinar, mauris id
 pulvinar placerat, lectus eros aliquam mauris, iaculis posuere lectus neque
-eget tellus. Vivamus eu libero id leo mattis egestas. In sollicitudin nunc
-et ipsum mattis fringilla. Nam et neque eget sem pharetra varius. Quisque
-nec placerat eros.
+eget tellus.
+
+Vivamus eu libero id leo mattis egestas. In sollicitudin nunc et ipsum mattis
+fringilla. Nam et neque eget sem pharetra varius. Quisque nec placerat eros.
 
 excerpt__end
 

@@ -24,7 +24,7 @@ pagination:
   permalink:                            /page:num/
 
 image:
-  path:                                 /assets/images/modules/attics/matthaeus-1920x1280.jpg
+  path:                                 /assets/images/modules/attics/1920x1280/matthaeus.jpg
   width:                                1920
   height:                               1280
   alt:                                  Photo by Matthaeus on Unsplash
@@ -40,9 +40,9 @@ resources:                              [ animate ]
 resource_options:
 
   - attic:
-      alignY:                           top
+      padding_top:                      550
       slides:
-        - url:                          /assets/images/modules/attics/matthaeus-1920x1280.jpg
+        - url:                          /assets/images/modules/attics/1920x1280/matthaeus.jpg
           alt:                          Photo by Matthaeus on Unsplash
           badge:
             type:                       unsplash
@@ -292,7 +292,7 @@ site_category_word_list:    {{site_category_word_list | debug}}
               </p>
 
               </div>
-              <a class="card-link md-grey-900 text-lowercase"
+              <a class="card-link text-lowercase"
                  href="{{post.url}}#readmore">
                  {{readmore_text}} · {{post.tagline}}
               </a>

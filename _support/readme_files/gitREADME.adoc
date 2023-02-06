@@ -173,7 +173,7 @@ Use the “git tag” command with the “-d” option
 # When modifying remember to issue a new tag command in git before committing,
 # then push the new tag
 #
-  git tag -a v -m "v"
+  git tag -a v -m "v2023.0.11"
   git push origin --tags
 
 == Update Git Index (cache) completely

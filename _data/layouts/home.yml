@@ -301,12 +301,12 @@ lanes:
   #
   - lane:
       enabled:                          true
-      id:                               agency_services
+      id:                               agency_service
       region:                           body-main
       type:                             sync
       base:                             _includes/custom/agency
       path:                             static
-      file:                             services.html
+      file:                             service.html
 
   # ----------------------------------------------------------------------------
   # AGENCY portfolio

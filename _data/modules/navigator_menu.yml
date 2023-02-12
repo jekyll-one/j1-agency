@@ -19,20 +19,20 @@
 # TOP-LEVEL items (NO sub-menu)
 #
 
-- item:                                 SERVICES
-  href:                                 /#services
+- item:                                 SERVICE
+  href:                                 /#service
 
 - item:                                 PORTFOLIO
   href:                                 /#portfolio
 
-- item:                                 CLIENTS
-  href:                                 /#clients
+# - item:                                 CLIENTS
+#   href:                                 /#clients
 
 - item:                                 TEAM
   href:                                 /#team
 
-- item:                                 PARTNERS
-  href:                                 /#partners
+# - item:                                 PARTNERS
+#   href:                                 /#partners
 
 - item:                                 CONTACT
   href:                                 /#contact

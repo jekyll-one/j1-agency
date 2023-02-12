@@ -339,7 +339,7 @@ permalink:                              pretty
 # site.url will be set to the value of host, port.
 # NOTE: Required setting for the sitemap plugin, for example.
 #
-# MAP file:                             https://agency.jekyll.one/sitemap.xml
+# MAP file (prod):                     https://agency.jekyll.one/sitemap.xml
 #
 # url:                                  http://localhost:21000
 url:                                    https://agency.jekyll.one

@@ -28,14 +28,9 @@ description:
 defaults:
 
   # ----------------------------------------------------------------------------
-  # Global settings
+  # Options
   #
   data_path:                            /assets/data/panel/index.html
-
-  filters:
-    grayscale:                          1
-    contrast:                           1
-    brightness:                         1
 
   # ----------------------------------------------------------------------------
   # PLAN panel

@@ -53,7 +53,7 @@ environment:                            development
 # ------------------------------------------------------------------------------
 # Sets the build version of the site
 #
-version:                                2023.0.15
+version:                                2023.0.16
 
 # copyright
 # ------------------------------------------------------------------------------
@@ -254,6 +254,15 @@ keywords: >
                                         google, analytics, advertising, search, console, silverlight, score,
                                         j1, template, jekyllone, comment
 
+author:
+  name:                                 Juergen Adams
+  email:                                juergen@jekyll.one
+  url:                                  https://jekyll.one/
+  github:                               username
+  facebook:                             username
+  twitter:                              username
+# feedburner:                           feedname
+
 webmaster:
   email:                                webmaster@agency.jekyll.one
 
@@ -268,7 +277,6 @@ robots:
 # ------------------------------------------------------------------------------
 # BRAND configuration
 # Set the brand image and favicon (located in /asset/images)
-
 brand:
   image:                                icons/agency/menubar-logo.svg
   image_height:                         38px
@@ -338,8 +346,6 @@ permalink:                              pretty
 # if you are running jekyll serve in a development environment,
 # site.url will be set to the value of host, port.
 # NOTE: Required setting for the sitemap plugin, for example.
-#
-# MAP file (prod):                      https://agency.jekyll.one/sitemap.xml
 #
 url:                                    http://localhost:21000
 # url:                                  https://agency.jekyll.one
@@ -431,16 +437,15 @@ sass:
 # ------------------------------------------------------------------------------
 # WEBRICK Customizations
 # You can provide custom headers for your site
-#
 # See: https://jekyllrb.com/docs/configuration/webrick/
 #      https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
 #
 # NOTE:
-#   Jekyll provides by default Content-Type and Cache-Control
-#   response headers: one dynamic in order to specify the nature of
-#   the data being served, the other static in order to disable
-#   caching so that you don’t have to fight with Chrome’s aggressive
-#   caching when you are in development mode.
+# Jekyll provides by default Content-Type and Cache-Control
+# response headers: one dynamic in order to specify the nature of
+# the data being served, the other static in order to disable
+# caching so that you don’t have to fight with Chrome’s aggressive
+# caching when you are in development mode.
 #
 # webrick:
 #   headers:
@@ -542,7 +547,7 @@ whitelist:
 
 
 # ==============================================================================
-# 5. SEO and Social Media settings (gloal)
+# 5. SEO ans Social Media settings (gloal)
 #
 # ------------------------------------------------------------------------------
 #
@@ -600,10 +605,10 @@ collections:
   # ----------------------------------------------------------------------------
   # Agency
   #
-  team:
+  portfolio:
     output: true
 
-  portfolio:
+  team:
     output: true
 
 # ------------------------------------------------------------------------------
@@ -727,57 +732,6 @@ defaults:
       resource_options:
         - toccer:
             collapseDepth:              3
-
-  # ----------------------------------------------------------------------------
-  # PUBLIC - SERIES
-  #
-  - scope:
-      type:                             posts
-      path:                             posts/public/series
-
-    values:
-      layout:                           post
-      compress:                         true
-
-      author:
-        name:                           Juergen Adams
-        url:                            https://jekyll.one/
-
-      logo:                             /assets/images/icons/j1/j1-512x512.png
-      image:
-        path:                           /assets/images/promo/home/screenshot.jpg
-        width:                          1200
-        height:                         800
-        alt:                            J1 Theme Home
-
-      robots:
-        index:                          true
-        follow:                         true
-
-      toc:                              true
-      fab_menu_id:                      open_toc_reload
-      scrollbar:                        false
-      page_navigation:                  true
-      personalization:                  false
-      exclude_from_search:              false
-
-      resource_options:
-        - toccer:
-            collapseDepth:              3
-
-  # ----------------------------------------------------------------------------
-  # Collections
-  #
-
-  # ----------------------------------------------------------------------------
-  # Biography (Book Shelf)
-  #
-  - scope:
-      type:                             biography
-      path:                             collections/_biography
-
-    values:
-      layout:                           page
 
 
 # ==============================================================================

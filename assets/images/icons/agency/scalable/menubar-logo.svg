@@ -13,7 +13,10 @@
    sodipodi:docname="menubar-logo.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    width="160"
-   height="38">
+   height="38"
+   inkscape:export-filename="D:\j1\github\j1-sites\j1-agency\assets\images\icons\agency\menubar-logo.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72">
   <metadata
      id="metadata38">
     <rdf:RDF>
@@ -42,8 +45,8 @@
      id="namedview34"
      showgrid="false"
      inkscape:zoom="4.6225837"
-     inkscape:cx="125.54384"
-     inkscape:cy="19.540001"
+     inkscape:cx="156.15443"
+     inkscape:cy="10.886832"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -54,14 +57,14 @@
      id="style2">.cls-1{fill:#fed136;}</style>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:36.0241px;line-height:1.25;font-family:roboto;-inkscape-font-specification:'roboto Bold Italic';fill:#ffcc00;stroke-width:0.900606"
-     x="12.87063"
-     y="28.233448"
+     style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.2036px;line-height:1.25;font-family:roboto;-inkscape-font-specification:'roboto Bold Italic';fill:#ffffff;fill-opacity:1;stroke-width:0.955093;"
+     x="11.960619"
+     y="29.008097"
      id="text42"
-     transform="scale(1.0049567,0.99506776)"><tspan
+     transform="scale(1.0329388,0.96811155)"><tspan
        sodipodi:role="line"
        id="tspan40"
-       x="12.87063"
-       y="28.233448"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:roboto;-inkscape-font-specification:'roboto Bold';fill:#ffcc00;stroke-width:0.900606">Agency </tspan></text>
+       x="11.960619"
+       y="29.008097"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:roboto;-inkscape-font-specification:'roboto Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.955093;">Agency </tspan></text>
 </svg>

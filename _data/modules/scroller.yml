@@ -26,12 +26,22 @@ description:
 settings:
   enabled:                              true
 
+  # ----------------------------------------------------------------------------
+  # Scroller options
+  # ----------------------------------------------------------------------------
+  filters:
+    grayscale:                          0
+
+  # ----------------------------------------------------------------------------
+  # Scroller configurations
+  # ----------------------------------------------------------------------------
   scrollers:
+
     # --------------------------------------------------------------------------
     # Intro Panel
     #
     - scroller:
-        enabled:                        true
+        enabled:                        false
         type:                           showOnScroll
         id:                             home_intro_panel
         container:                      home_intro_panel
@@ -42,7 +52,7 @@ settings:
     # Service Panel
     #
     - scroller:
-        enabled:                        true
+        enabled:                        false
         type:                           showOnScroll
         id:                             home_service_panel
         container:                      home_service_panel
@@ -50,7 +60,7 @@ settings:
         scrollOffset:                   200
 
     # --------------------------------------------------------------------------
-    # News Panel  (ScrollGroup)
+    # News Panel (ScrollGroup)
     #
     - scroller:
         enabled:                        true
@@ -59,12 +69,12 @@ settings:
         container:                      home_news_panel-scroll-group
         pagePath:                       /assets/data/news_panel_posts/page
         elementScroll:                  true                                    # false = window, true = container
-        scrollOffset:                   100
-        lastPage:                       1                                       # 1 page "equals" 2 posts
+        scrollOffset:                   200
+        lastPage:                       1
         infoLastPage:                   true
 
         lastPageInfo_en: >
-                                        More articles on the
+                                        More articles can be found with the
                                         <a href="/pages/public/blog/navigator/" class="link-no-decoration">Navigator</a>
         lastPageInfo_de: >
                                         Weitere Artikel finden Sie im
@@ -81,7 +91,7 @@ settings:
         pagePath:                       /pages/public/blog/navigator/page
         elementScroll:                  true
         scrollOffset:                   200
-        lastPage:                       2                                       # 1 page "equals" 2 posts
+        lastPage:                       4
         infoLastPage:                   false
 
         lastPageInfo_en:                ""

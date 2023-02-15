@@ -47,7 +47,7 @@
 #   values:                             development|production
 #   default:                            development
 #
-environment:                            development
+environment:                            production
 
 # version
 # ------------------------------------------------------------------------------
@@ -278,9 +278,9 @@ robots:
 # BRAND configuration
 # Set the brand image and favicon (located in /asset/images)
 brand:
-  image:                                icons/agency/scalable/menubar-logo.svg
+  image:                                icons/agency/menubar-logo.svg
   image_height:                         38px
-  text:                                 Agency
+  text:                                 Agency Studio
   text_color:                           "#9E9E9E"
 
 # Set the favicon and type
@@ -347,8 +347,8 @@ permalink:                              pretty
 # site.url will be set to the value of host, port.
 # NOTE: Required setting for the sitemap plugin, for example.
 #
-url:                                    http://localhost:21000
-# url:                                  https://agency.jekyll.one
+# url:                                  http://localhost:21000
+url:                                    https://agency.jekyll.one
 
 # The subpath of your site, e.g. /blog/. Used in conjunction with
 # site.url (see above) when you want a link to something with the

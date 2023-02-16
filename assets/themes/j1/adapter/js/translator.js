@@ -88,9 +88,19 @@ regenerate:                             true
 j1.adapter.translator = (function (j1, window) {
   var environment       = '{{environment}}';
   var user_translate    = {};
+
+  var stringifiedAttributes       = '';
+
+  var cookieDefaults;
+  var cookieSettings;
+  var cookieOptions;
+
   var translatorDefaults;
   var translatorSettings;
   var translatorOptions;
+
+  var check_cookie_option_domain;
+
   var _this;
   var $modal;
   var cookie_names;
@@ -111,6 +121,7 @@ j1.adapter.translator = (function (j1, window) {
   var gtTranslateScript;
   var gtCallbackScript;
   var languageList;
+
   var domainAttribute;
 
   // ---------------------------------------------------------------------------
@@ -137,10 +148,17 @@ j1.adapter.translator = (function (j1, window) {
       _this                 = j1.adapter.translator;
       logger                = log4javascript.getLogger('j1.adapter.translator');
 
+      // Load cookie DEFAULTS|CONFIG
+      cookieDefaults        = $.extend({}, {{cookie_defaults | replace: 'nil', 'null' | replace: '=>', ':' }});
+      cookieSettings        = $.extend({}, {{cookie_settings | replace: 'nil', 'null' | replace: '=>', ':' }});
+      cookieOptions         = $.extend(true, {}, cookieDefaults, cookieSettings);
+
       // Load  module DEFAULTS|CONFIG
       translatorDefaults    = $.extend({},   {{translator_defaults | replace: 'nil', 'null' | replace: '=>', ':' }});
       translatorSettings    = $.extend({},   {{translator_settings | replace: 'nil', 'null' | replace: '=>', ':' }});
       translatorOptions     = $.extend(true, {}, translatorDefaults, translatorSettings);
+
+      check_cookie_option_domain  = (cookieOptions.domain === 'false') ? false : true;
 
       url                   = new liteURL(window.location.href);
       baseUrl               = url.origin;
@@ -187,17 +205,30 @@ j1.adapter.translator = (function (j1, window) {
       // initializer
       // -----------------------------------------------------------------------
       var dependencies_met_page_ready = setInterval (function (options) {
-        var expires       = '{{cookie_options.expires}}';
-        var same_site     = '{{cookie_options.same_site}}';
-        var option_domain = '{{cookie_options.domain}}';
+        var expires       = cookieOptions.expires;
+        var same_site     = cookieOptions.same_site;
+        var option_domain = cookieOptions.domain;
 
         user_consent      = j1.readCookie(cookie_names.user_consent);
 
         // set domain used by cookies
-        if (option_domain == 'auto') {
-          domainAttribute = domain ;
-        } else  {
-          domainAttribute = '';
+
+        // if (option_domain == 'auto') {
+        //   domainAttribute = domain ;
+        // } else  {
+        //   domainAttribute = '';
+        // }
+
+        if (check_cookie_option_domain) {
+          if (cookieOptions.domain == 'auto') {
+            domainAttribute = auto_domain;
+            stringifiedAttributes += '; ' + 'Domain=' + domainAttribute;
+          } else  {
+            domainAttribute = cookieOptions.domain;
+            stringifiedAttributes += '; ' + 'Domain=' + domainAttribute;
+          }
+        } else {
+          domainAttribute = cookieOptions.domain;
         }
 
         var pageState   = $('#no_flicker').css("display");

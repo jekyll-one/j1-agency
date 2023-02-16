@@ -424,12 +424,25 @@ j1.adapter.translator = (function (j1, window) {
       var selectedTranslationLanguage;
 
       // set domain used by cookies
+
       // if (cookie_option_domain == 'auto') {
       //   domainAttribute = domain ;
       // } else  {
       //   // domainAttribute = hostname;
       //   domainAttribute = '';
       // }
+
+      if (check_cookie_option_domain) {
+        if (cookieOptions.domain == 'auto') {
+          domainAttribute = auto_domain;
+          stringifiedAttributes += '; ' + 'Domain=' + domainAttribute;
+        } else  {
+          domainAttribute = cookieOptions.domain;
+          stringifiedAttributes += '; ' + 'Domain=' + domainAttribute;
+        }
+      } else {
+        domainAttribute = cookieOptions.domain;
+      }
 
       selectedTranslationLanguage = msDropdown.value;
       logger.info('\n' + 'selected translation language: ' + selectedTranslationLanguage);

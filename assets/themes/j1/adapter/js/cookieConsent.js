@@ -89,10 +89,18 @@ j1.adapter.cookieConsent = (function (j1, window) {
   var tracking_enabled            = ('{{tracking_enabled}}' === 'true') ? true: false;
   var tracking_id                 = '{{tracking_id}}';
   var tracking_id_valid           = (tracking_id.includes('tracking-id')) ? false : true;
-  var expireCookiesOnRequiredOnly = ('{{cookie_options.expireCookiesOnRequiredOnly}}' === 'true') ? true: false;
+  var stringifiedAttributes       = '';
+
+  var expireCookiesOnRequiredOnly;
+
+  var cookieDefaults;
+  var cookieSettings;
+  var cookieOptions;
+
   var cookieConsentDefaults;
   var cookieConsentSettings;
   var cookieConsentOptions;
+
   var _this;
   var $modal;
   var cookie_names;
@@ -102,7 +110,7 @@ j1.adapter.cookieConsent = (function (j1, window) {
   var baseUrl;
   var hostname;
   var auto_domain;
-  var cookie_option_domain;
+  var check_cookie_option_domain;
   var cookie_domain;
   var secure;
   var logText;
@@ -146,15 +154,19 @@ j1.adapter.cookieConsent = (function (j1, window) {
       baseUrl               = url.origin;
       hostname              = url.hostname;
       auto_domain           = hostname.substring(hostname.lastIndexOf('.', hostname.lastIndexOf('.') - 1) + 1);
-      cookie_option_domain  = ('{{cookie_options.domain}}' === 'true');
       secure                = (url.protocol.includes('https')) ? true : false;
       contentLanguage       = '{{site.language}}';
       navigatorLanguage     = navigator.language || navigator.userLanguage;
 
+      // Load cookie DEFAULTS|CONFIG
+      cookieDefaults        = $.extend({}, {{cookie_defaults | replace: 'nil', 'null' | replace: '=>', ':' }});
+      cookieSettings        = $.extend({}, {{cookie_settings | replace: 'nil', 'null' | replace: '=>', ':' }});
+      cookieOptions         = $.extend(true, {}, cookieDefaults, cookieSettings);
+
       // Load  module DEFAULTS|CONFIG
-      cookieConsentDefaults          = $.extend({}, {{consent_defaults | replace: 'nil', 'null' | replace: '=>', ':' }});
-      cookieConsentSettings          = $.extend({}, {{consent_settings | replace: 'nil', 'null' | replace: '=>', ':' }});
-      cookieConsentOptions           = $.extend(true, {}, cookieConsentDefaults, cookieConsentSettings);
+      cookieConsentDefaults = $.extend({}, {{consent_defaults | replace: 'nil', 'null' | replace: '=>', ':' }});
+      cookieConsentSettings = $.extend({}, {{consent_settings | replace: 'nil', 'null' | replace: '=>', ':' }});
+      cookieConsentOptions  = $.extend(true, {}, cookieConsentDefaults, cookieConsentSettings);
 
       // initialize state flag
       _this.state = 'pending';
@@ -176,15 +188,18 @@ j1.adapter.cookieConsent = (function (j1, window) {
         cookieConsentOptions.dialogLanguage = contentLanguage;
       }
 
+      check_cookie_option_domain  = (cookieOptions.domain === 'false') ? false : true;
+      expireCookiesOnRequiredOnly = (cookieOptions.expireCookiesOnRequiredOnly === 'true') ? true: false;
+
       // -----------------------------------------------------------------------
       // initializer
       // -----------------------------------------------------------------------
       var dependencies_met_page_ready = setInterval (function (options) {
-        var same_site = '{{cookie_options.same_site}}';
+        var same_site = cookieOptions.same_site;
         var expires;
 
         if (cookieConsentOptions.enabled) {
-          expires = '{{cookie_options.expires}}';
+          expires = cookieOptions.expires;
         } else {
           // expire permanent cookies to session
           j1.expireCookie({ name: cookie_names.user_state });
@@ -202,14 +217,16 @@ j1.adapter.cookieConsent = (function (j1, window) {
         }
 
         // set domain used by cookies
-        if (cookie_option_domain) {
-          if (cookie_option_domain == 'auto') {
+        if (check_cookie_option_domain) {
+          if (cookieOptions.domain == 'auto') {
             domainAttribute = auto_domain;
             stringifiedAttributes += '; ' + 'Domain=' + domainAttribute;
-          } else if (cookie_option_domain)  {
-            domainAttribute = domain;
+          } else  {
+            domainAttribute = cookieOptions.domain;
             stringifiedAttributes += '; ' + 'Domain=' + domainAttribute;
           }
+        } else {
+          domainAttribute = cookieOptions.domain;
         }
 
         // Failsafe: if 'None' is given for samesite in non-secure
@@ -222,24 +239,23 @@ j1.adapter.cookieConsent = (function (j1, window) {
         if ( j1.getState() === 'finished' ) {
           _this.setState('started');
 
-
           if (cookieConsentOptions.enabled) {
             logger.debug('\n' + 'state: ' + _this.getState());
             logger.info('\n' + 'module is being initialized');
 
             j1.cookieConsent = new CookieConsent ({
-              contentURL:             cookieConsentOptions.contentURL,                   // dialog content (modals) for all supported languages
-              cookieName:             cookie_names.user_consent,                  // name of the consent cookie
-              cookieStorageDays:      expires,                                    // lifetime of a cookie [0..365], 0: session cookie
-              cookieSameSite:         same_site,                                  // restrict consent cookie
-              cookieSecure:           secure,                                     // only sent to the server with an encrypted request over HTTPS
-              cookieDomain:           domainAttribute,                            // set domain (hostname|domain)
-              dialogLanguage:         cookieConsentOptions.dialogLanguage,               // language for the dialog (modal)
-              whitelisted:            cookieConsentOptions.whitelisted,                  // pages NO cookie dialog is shown
-              reloadPageOnChange:     cookieConsentOptions.reloadPageOnChange,           // reload if setzings has changed
-              dialogContainerID:      cookieConsentOptions.dialogContainerID,            // container, the dialog modal is (dynamically) loaded
-              xhrDataElement:         cookieConsentOptions.xhrDataElement,               // container for all language-specific dialogs (modals)
-              postSelectionCallback:  cookieConsentOptions.postSelectionCallback,        // callback function, called after the user has made his selection
+              contentURL:             cookieConsentOptions.contentURL,          // dialog content (modals) for all supported languages
+              cookieName:             cookie_names.user_consent,                // name of the consent cookie
+              cookieStorageDays:      expires,                                  // lifetime of a cookie [0..365], 0: session cookie
+              cookieSameSite:         same_site,                                // restrict consent cookie
+              cookieSecure:           secure,                                   // only sent to the server with an encrypted request over HTTPS
+              cookieDomain:           domainAttribute,                          // set domain (hostname|domain)
+              dialogLanguage:         cookieConsentOptions.dialogLanguage,      // language for the dialog (modal)
+              whitelisted:            cookieConsentOptions.whitelisted,         // pages NO cookie dialog is shown
+              reloadPageOnChange:     cookieConsentOptions.reloadPageOnChange,  // reload if setzings has changed
+              dialogContainerID:      cookieConsentOptions.dialogContainerID,   // container, the dialog modal is (dynamically) loaded
+              xhrDataElement:         cookieConsentOptions.xhrDataElement,      // container for all language-specific dialogs (modals)
+              postSelectionCallback:  cookieConsentOptions.postSelectionCallback, // callback function, called after the user has made his selection
             });
           } else {
             logger.warn('\n' + 'module is disabled');

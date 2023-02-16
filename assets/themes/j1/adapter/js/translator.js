@@ -100,6 +100,7 @@ j1.adapter.translator = (function (j1, window) {
   var translatorOptions;
 
   var check_cookie_option_domain;
+  var auto_domain;
 
   var _this;
   var $modal;
@@ -109,7 +110,10 @@ j1.adapter.translator = (function (j1, window) {
   var url;
   var baseUrl;
   var hostname;
+
   var domain;
+  var auto_domain;
+
   var cookie_option_domain;
   var secure;
   var logText;
@@ -163,7 +167,8 @@ j1.adapter.translator = (function (j1, window) {
       url                   = new liteURL(window.location.href);
       baseUrl               = url.origin;
       hostname              = url.hostname;
-      domain                = hostname.substring(hostname.lastIndexOf('.', hostname.lastIndexOf('.') - 1) + 1);
+//    domain                = hostname.substring(hostname.lastIndexOf('.', hostname.lastIndexOf('.') - 1) + 1);
+      auto_domain           = hostname.substring(hostname.lastIndexOf('.', hostname.lastIndexOf('.') - 1) + 1);
       secure                = (url.protocol.includes('https')) ? true : false;
       navigator_language    = navigator.language || navigator.userLanguage;     // userLanguage for MS IE compatibility
       translation_language  = navigator_language.split('-')[0];

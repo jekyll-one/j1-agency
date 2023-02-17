@@ -406,8 +406,16 @@ j1.adapter.translator = (function (j1, window) {
     // the selection for a translation|language
     // -------------------------------------------------------------------------
     cbGoogle: function () {
-      var logger                = log4javascript.getLogger('j1.adapter.translator.cbGoogle');
-      var msDropdown            = document.getElementById('dropdownJSON').msDropdown;
+      var logger            = log4javascript.getLogger('j1.adapter.translator.cbGoogle');
+      var msDropdown        = document.getElementById('dropdownJSON').msDropdown;
+
+      var url               = new liteURL(window.location.href);
+      var baseUrl           = url.origin;
+      var hostname          = url.hostname;
+      var auto_domain       = hostname.substring(hostname.lastIndexOf('.', hostname.lastIndexOf('.') - 1) + 1);
+
+      var domainAttribute    = '';
+
 //    var cookie_names          = j1.getCookieNames();
 //    var user_consent          = j1.readCookie(cookie_names.user_consent);
 //    var user_translate        = j1.readCookie(cookie_names.user_translate);
@@ -417,10 +425,10 @@ j1.adapter.translator = (function (j1, window) {
 //    var domain                = hostname.substring(hostname.lastIndexOf('.', hostname.lastIndexOf('.') - 1) + 1);
 //    var cookie_option_domain  = '{{cookie_options.domain}}';
 //    var same_site             = '{{cookie_options.same_site}}';
+
       var srcLang;
       var destLang;
       var transCode;
-      var domainAttribute;
       var selectedTranslationLanguage;
 
       // set domain used by cookies
@@ -477,7 +485,11 @@ j1.adapter.translator = (function (j1, window) {
       // in an empty field and two cookies (host+domain) if domain option
       // is enabled!!!
       // -----------------------------------------------------------------------
-      Cookies.set('googtrans', transCode);
+      if (domainAttribute) {
+        Cookies.set('googtrans', transCode, { domain: domainAttribute });
+      } else {
+        Cookies.set('googtrans', transCode, { domain: hostname });        
+      }
 
       // reload current page (skip cache)
       location.reload(true);

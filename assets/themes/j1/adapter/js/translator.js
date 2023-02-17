@@ -485,11 +485,19 @@ j1.adapter.translator = (function (j1, window) {
       // in an empty field and two cookies (host+domain) if domain option
       // is enabled!!!
       // -----------------------------------------------------------------------
-      if (domainAttribute) {
-        Cookies.set('googtrans', transCode, { domain: domainAttribute });
-      } else {
-        Cookies.set('googtrans', transCode, { domain: hostname });        
-      }
+      // if (domainAttribute) {
+      //   Cookies.set('googtrans', transCode, { domain: domainAttribute });
+      // } else {
+      //   Cookies.set('googtrans', transCode, { domain: hostname });
+      // }
+
+      Cookies.set('googtrans', transCode, { domain: hostname });
+
+      // j1.writeCookie({
+      //   name:     'googtrans',
+      //   data:     transCode,
+      //   domain:   hostname
+      // });
 
       // reload current page (skip cache)
       location.reload(true);

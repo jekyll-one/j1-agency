@@ -491,8 +491,7 @@ j1.adapter.translator = (function (j1, window) {
       //   Cookies.set('googtrans', transCode, { domain: hostname });
       // }
 
-      // Cookies.set('googtrans', transCode, { domain: hostname });
-      Cookies.set('googtrans', transCode, { domain: 'localhost' });
+      Cookies.set('googtrans', transCode, { domain: hostname });
 
       // j1.writeCookie({
       //   name:     'googtrans',

@@ -465,6 +465,7 @@ j1.adapter.translator = (function (j1, window) {
       // translation language MUST be DIFFERENT from content language
       if (srcLang == selectedTranslationLanguage ) {
         Cookies.remove('googtrans', { domain: domainAttribute });
+        Cookies.remove('googtrans', { domain: auto_domain });
         Cookies.remove('googtrans', { domain: hostname });
         Cookies.remove('googtrans');
         location.reload(true);
@@ -476,6 +477,7 @@ j1.adapter.translator = (function (j1, window) {
 
       // remove all googtrans cookies that POTENTIALLY exists
       Cookies.remove('googtrans', { domain: domainAttribute });
+      Cookies.remove('googtrans', { domain: auto_domain });
       Cookies.remove('googtrans', { domain: hostname });
       Cookies.remove('googtrans');
 
@@ -491,7 +493,7 @@ j1.adapter.translator = (function (j1, window) {
       //   Cookies.set('googtrans', transCode, { domain: hostname });
       // }
 
-      Cookies.set('googtrans', transCode, { domain: hostname });
+      Cookies.set('googtrans', transCode, { domain: auto_domain });
 
       // j1.writeCookie({
       //   name:     'googtrans',

@@ -278,7 +278,7 @@ robots:
 # BRAND configuration
 # Set the brand image and favicon (located in /asset/images)
 brand:
-  image:                                icons/agency/menubar-logo.svg
+  image:                                icons/agency/scalable/menubar-logo.svg
   image_height:                         38px
   text:                                 Agency Studio
   text_color:                           "#9E9E9E"

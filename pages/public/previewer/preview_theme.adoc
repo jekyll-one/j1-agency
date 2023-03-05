@@ -3,10 +3,11 @@ title:                                  Theme Preview
 tagline:                                Explore Current Styles
 date:                                   2022-12-01 00:00:00
 description: >
-                                        Agency is one of the most popular HTML themes offered by Start Bootstrap.
-                                        I have Jekyllised this theme to give web developers and hobbyists a simple
-                                        and clean implimentation in Jekyll for starting new projects. This template
-                                        is free and open source, released under the MIT license.
+                                        Freelancer is based on a popular HTML theme offered by Start Bootstrap.
+                                        This Jekyllised version of the theme is perfect for small businesses
+                                        looking to set up a simple landing page for their company. The theme
+                                        can also be modified and adjusted to fit just about any purpose.
+                                        This theme is free and open source, released under the MIT license.
 
 categories:                             [ Previewer ]
 tags:                                   [ Bootstrap, CSS, Theme ]
@@ -18,7 +19,7 @@ image:
   alt:                                  Bootstrap Theme Agency
 
 comments:                               false
-fab_menu_id:                            page_ctrl                               # open_toc
+fab_menu_id:                            open_toc
 scrollbar:                              false
 
 permalink:                              /pages/public/previewer/theme/
@@ -97,6 +98,7 @@ resource_options:
 // Set (local) page attributes here
 // -----------------------------------------------------------------------------
 // :page--attr:                         <attr-value>
+:start-bootstrap--home:                 https://startbootstrap.com
 
 //  Load Liquid procedures
 // -----------------------------------------------------------------------------
@@ -108,11 +110,14 @@ resource_options:
 
 // Page content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[role="dropcap"]
-JekyllOne is a theme for multifunctional Bootstrap-based and responsive
-websites, and offers various unique functionalities compared to other themes
-and templates for Jekyll. Themes for Bootstrap are used to customize the appearance
-of a website based on the basic rules and definitions of Bootstrap's CSS styles.
+// [role="dropcap"]
+Agency is based on a popular *HTML* theme offered by
+link:{start-bootstrap--home}[Start Bootstrap, {browser-window--new}].
+This *Jekyllised* version of the theme is perfect for small businesses
+looking to set up a simple landing page for their company. The theme can also
+be modified and adjusted to fit just about any purpose.
+
+This theme is free and open source, released under the MIT license.
 
 // Include sub-documents (if any)
 // -----------------------------------------------------------------------------
@@ -2980,7 +2985,7 @@ endif::[]
   var user_state        = j1.readCookie(cookie_names.user_state);
   var theme_slogans     = {};
 
-  theme_slogans.Agency  = 'Start new projects';
+  theme_slogans.Agency  = 'Perfect for small businesses';
 
   themeName             = user_state.theme_name;
   theme_slogan          = theme_slogans[themeName];

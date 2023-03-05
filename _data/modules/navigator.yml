@@ -34,14 +34,43 @@ settings:
   #
   nav_bar:
     enabled:                            true
-    fixed:                              true
+
+    nav_item_color:                     '#ffffff'
+    nav_item_color_hover:               '#616161'
+
+    background_color_full:              '#29272c'                               # attic image color
+    background_color_collapsed:         default                                 # default: theme|bg_primary
+    background_color_scrolled:          default                                 # default: theme|bg_primary
 
   # ----------------------------------------------------------------------------
   # NavMenu (Desktop)
   #
   nav_menu:
     enabled:                            true
-    delay_open_menu:                    150
+
+  # ----------------------------------------------------------------------------
+  # NavQuicklinks
+  #
+  nav_quicklinks:
+    enabled:                            true
+
+    icon_color:                         '#ffffff'
+    icon_color_hover:                   '#616161'
+
+    # home_url:                           /                                       # none | URL
+    # back_url:                           none                                    # none | URL
+    #
+    # r_text_sizer:                       false                                   # true | false
+    #
+    # github_url:                         none                                    # https://github.com/jekyll-one
+    # disqus_url:                         none                                    # https://disqus.com/
+    # patreon_url:                        none                                    # https://www.patreon.com/jekyll_one/posts
+
+  # ----------------------------------------------------------------------------
+  # NavTopsearch
+  #
+  nav_topsearch:
+    enabled:                            true
 
   # ----------------------------------------------------------------------------
   # NavMenu (MMobile)
@@ -206,27 +235,6 @@ settings:
                       value:            ??cookie-state
                       href:             ??provider_privacy_url
                       target:           none
-
-  # ----------------------------------------------------------------------------
-  # NavQuicklinks
-  #
-  nav_quicklinks:
-    enabled:                            true
-
-    home_url:                           /                                       # none | URL
-    back_url:                           none                                    # none | URL
-
-    r_text_sizer:                       false                                   # true | false
-
-    github_url:                         none                                    # https://github.com/jekyll-one
-    disqus_url:                         none                                    # https://disqus.com/
-    patreon_url:                        none                                    # https://www.patreon.com/jekyll_one/posts
-
-  # ----------------------------------------------------------------------------
-  # NavTopsearch
-  #
-  nav_topsearch:
-    enabled:                            true
 
 # ------------------------------------------------------------------------------
 # END config

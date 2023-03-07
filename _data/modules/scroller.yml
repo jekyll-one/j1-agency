@@ -26,13 +26,12 @@ description:
 settings:
   enabled:                              true
 
-  scrollOffsetCorrection:               -70
-
   # ----------------------------------------------------------------------------
   # SmoothScroll options
   # ----------------------------------------------------------------------------
   smoothscroll:
-    offsetCorrection:                   -70
+    offsetCorrection:                   0
+    offsetCorrectionLocal:              -90
 
   # ----------------------------------------------------------------------------
   # Scroller options

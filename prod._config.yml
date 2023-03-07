@@ -668,7 +668,7 @@ defaults:
 
       icons:
         family:                         MDI
-        color:                          md-blue
+        color:                          md-yellow
         size:                           5x
 
       images:

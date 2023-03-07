@@ -74,12 +74,12 @@ defaults:
   # gradient effect (all image color typas)
   #
   # background_color_1:                   "#000"                                # black
-  # background_color_2:                   "#78909C"                             # md-yellowgray-400
+  # background_color_2:                   "#78909C"                             # md-yellow-700gray-400
 
   # duo-color effect, base color 'blue' (requires gray-scaled images)
   #
-  background_color_1:                   "#0D47A1"                               # md-yellow-900
-  background_color_2:                   "#0D47A1"                               # md-yellow-900
+  background_color_1:                   "#0D47A1"                               # md-yellow-700-900
+  background_color_2:                   "#0D47A1"                               # md-yellow-700-900
 
   # currently NOT supported
   #

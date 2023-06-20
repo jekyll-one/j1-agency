@@ -1,0 +1,77 @@
+# ------------------------------------------------------------------------------
+# ~/_data/components/j1_panel.yml
+# Template specific configuration data to configure panel lanes
+#
+# Product/Info:
+# https://jekyll.one
+#
+# Copyright (C) 2023 Juergen Adams
+#
+# J1 Theme is licensed under the MIT License.
+# See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
+#
+# ------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------
+# Description
+#
+description:
+
+  title:                                Panel
+  scope:                                User settings
+  location:                             _data/blocks/panel.yml
+
+
+# ------------------------------------------------------------------------------
+# SETTINGS
+#
+settings:
+
+  filters:
+    grayscale:                          0
+    contrast:                           1
+    brightness:                         1
+
+  # ----------------------------------------------------------------------------
+  # NEWS panel
+  #
+  #   The news panel displays a configurable number of available posts
+  #   (excerpts) using infinite scroll.
+  #
+  # ----------------------------------------------------------------------------
+  #
+  news:
+
+    - name:                             Home News Panel
+      panel:
+        enabled:                        true
+
+        id:                             panel_home_news
+        comment:                        Home News Panel
+        type:                           news
+        category_blacklist:             [ posts, public, private, protected, featured, series ]
+        properties:                     pt-5 pb-5
+
+        position:                       left                                    # left | center
+        title:                          Blog
+        tagline:                        latest news
+        translate_description:          notranslate                             # translate|notranslate
+        description_properties:         mt-3 mr-3 mb-5
+        description: >
+                                        <p class="dropcap">
+                                          Explore the blog and find interesting articles around Jekyll and
+                                          website creation processes in general. And this blog is an excellent
+                                          example of how J1 and Jekyll can be used for blogging.
+                                        </p>
+        cards:
+
+          - name:                       Recent Posts
+            card:
+              infinite_scroll:          true
+              animate:                  fadeInLeft
+              block:                    card-list                               # card-deck | card-list
+              num_per_row:              2                                       # card-list only: [1 .. 4]
+              max_posts:                2
+
+# ------------------------------------------------------------------------------
+# END config

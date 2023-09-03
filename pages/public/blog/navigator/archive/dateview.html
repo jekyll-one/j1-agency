@@ -2,10 +2,13 @@
 layout:                                 page
 
 title:                                  Posts by Date
-date:                                   2022-01-01 01:00:00
 tagline:                                Explore Posts
+
+date:                                   2022-01-01
+#last_modified:                         2023-01-01
+
 description: >
-                                        To make all posts using J1 Theme easy accessible to the visitors,
+                                        To make all posts using J1 Template easy accessible to the visitors,
                                         the Navigation System of J1 Template provides a Explorer module
                                         for Blog articles: the Navigator. The Naviagtor supports the users
                                         for browsing articles by sorting criteria like category and date
@@ -22,14 +25,8 @@ image:
   path:                                 /assets/images/modules/attics/1920x1280/matthaeus.jpg
   width:                                1920
   height:                               1280
-  alt:                                  Photo by Matthaeus on Unsplash
 
 sort:                                   date
-toc:                                    true
-fab_menu_id:                            open_toc
-analytics:                              true
-advertising:                            false
-comments:                               false
 exclude_from_search:                    true
 regenerate:                             false                                   # set to 'true', if update posts is required
 
@@ -144,7 +141,7 @@ site_category_word_list:    {{site_category_word_list | debug}}
 {% comment %} Main
 -------------------------------------------------------------------------------- {% endcomment %}
 <!-- [INFO   ] [ {{page.url}} ] [Generate HTML}] -->
-<div class="paginator ml-3">
+<div class="paginator speak2me-ignore ml-3 mb-4">
   <ul class="pagination raised-z0">
     <li class="page-item"><a class="page-link" href="/" title="Home">Home</a></li>
     <!-- li class="page-item"><a class="page-link" href="{{navigator|prepend: site.baseurl}}" alt="Blog Navigator">Navigator</a></li -->
@@ -161,8 +158,9 @@ site_category_word_list:    {{site_category_word_list | debug}}
   {% endif %}
 
   <div class="post-headline">
-    <h1 id="post-headline notoc" class="mt-5">{{view_headline}}</h1>
+    <h2 id="post-headline" class="notoc mt-5">{{view_headline}}</h2>
   </div>
+
   {% assign openList = '<ul class="list-unstyled link-news">' %}
   {% assign closeList = '</ul>' %}
 
@@ -228,7 +226,7 @@ site_category_word_list:    {{site_category_word_list | debug}}
 
             <div class="col-md-6 p-0">
               <div class="card-body r-text-300 mt-0">{{excerpt}}</div>
-              <div class="card-footer not-rounded r-text-200">
+              <div class="card-footer speak2me-ignore not-rounded r-text-200">
                 <div class="card-footer-text">
 
                   {% if post.date %}
@@ -266,7 +264,7 @@ site_category_word_list:    {{site_category_word_list | debug}}
 
                 </div>
                 <a class="card-link text-lowercase"
-                   href="{{post.url}}#readmore">
+                   href="{{post.url}}">
                    {{readmore_text}} · {{post.tagline}}
                 </a>
               </div>

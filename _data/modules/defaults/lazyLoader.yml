@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
-# ~/_data/modules/blog_navigator.yml
-# User configuration to configure generated pages by J1 Blog Navigator
+# ~/_data/modules/defaults/lazyLoader.yml
+# Default Configuration of the lazyLoader Module
 #
 # Product/Info:
 # https://jekyll.one
@@ -11,25 +11,23 @@
 # See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
 #
 # ------------------------------------------------------------------------------
+# NOTE:
+#
+# ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
 # Description
 #
 description:
-  title:                                J1 Blog Navigator
-  scope:                                User settings
-  location:                             _data/builder/blog_navigator.yml
+  title:                                lazyLoader
+  scope:                                Default settings
+  location:                             _data/modules/defaults/lazyLoader.yml
 
 # ------------------------------------------------------------------------------
-# User settings
+# Default settings
 #
-settings:
-
-  # ----------------------------------------------------------------------------
-  # Navigator options
-  # ----------------------------------------------------------------------------
-  filters:
-    grayscale:                          0
+defaults:
+  enabled:                              false
 
 # ------------------------------------------------------------------------------
 # END config

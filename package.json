@@ -131,7 +131,7 @@
     "get_version:jekyll": "cross-var cross-env JEKYLL_ENV=$npm_package_config_mode BUNDLE_GEMFILE=$npm_package_jekyll_gemfile bundle exec jekyll --version"
   },
   "dependencies": {
-    "bootstrap": "^5.3",
+    "bootstrap": "^5",
     "cross-env": "^7.0.3",
     "cross-var": "^1.1.0",
     "getos": "^3.2.1",

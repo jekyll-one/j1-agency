@@ -50,6 +50,8 @@ Customer interaction for websites refers to how a website interacts with
 visitors or customers. Interaction can include a variety of activities
 and features.
 
+To optimize customer interaction, read about strategies you can implement.
+
 excerpt__end
 
 //  Load Liquid procedures

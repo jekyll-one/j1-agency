@@ -1,14 +1,14 @@
 <!-- Portfolio Grid-->
-<section id="portfolio" class="page-section elevated-z1">
+<section id="portfolio" class="page-section speak2me-ignore elevated-z1">
   <div class="container">
 
     <div class="text-center mb-5">
-    	<h2 class="text-uppercase mb-0">Portfolio</h2>
+    	<h2 id="portfolio" class="text-uppercase mb-0">Portfolio</h2>
     	<p class="h3 text-muted mb-0"><i>what i do</i></p>
     	<div class="d-inline-block g-width-50 g-height-2 bg-primary mb-2"></div>
     </div>
 
-    <div class="row">
+    <div class="row speak2me-ignore">
       {% assign collections = site.portfolio | sort: 'name' %}
       {% for collection in collections %}
       <div class="col-lg-4 col-sm-6 mb-4">
@@ -35,7 +35,7 @@
 
 <!-- Portfolio Modals-->
 {% for collection in collections %}
-<div class="portfolio-modal modal fade" id="portfolioModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="speak2me-ignore portfolio-modal modal fade" id="portfolioModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
 

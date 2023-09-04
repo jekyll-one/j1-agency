@@ -48,9 +48,10 @@ resource_options:
 
 [role="dropcap"]
 Jekyll is a static site generator that allows you to build websites using
-Markdown, HTML, and CSS. It uses templates and layouts to generate the static
-files that make up your website, which can be hosted on any web server.
-Jekyll is built with Ruby and requires basic command line knowledge.
+Markdown, HTML, and CSS.
+
+It uses templates and layouts to generate the static files that make up your
+website, which can be hosted on any web server.
 
 excerpt__end
 

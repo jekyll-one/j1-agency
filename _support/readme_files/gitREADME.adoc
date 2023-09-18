@@ -156,20 +156,11 @@ Also removing ignored files:
 
 git clean -dfx
 
-
-== Modify most recent commit message
-
-The git commit option `--amend` allows you to change the most
-recent commit message:
-
-  git commit --amend -m "New commit message"
-
-
 == Delete a Git tag
 
 Use the “git tag” command with the “-d” option
 
-=== From local
+== From local
 
   git tag -d v2023.9.0
 

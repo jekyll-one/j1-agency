@@ -28,6 +28,7 @@ image:
   width:                                1920
   height:                               1280
 
+tts:                                    false
 sort:                                   date
 exclude_from_search:                    true
 regenerate:                             false                                   # set to 'true', if update posts is required
@@ -97,13 +98,12 @@ resource_options:
   {% assign sorted_posts = site.posts|sort: 'date' %}
 {% endif %}
 
-{% comment %} TODO: skip_words NOT longer needed?
-              NOTE: Already done by processing of categories
+{% comment %} TODO: skip_words NOT longer needed? Already done
+by processing of categories
 --------------------------------------------------------------------------------
 {% capture skip_words %} Posts Public {% endcapture %}
 --------------------------------------------------------------------------------
 {% endcomment %}
-
 
 {% comment %} category processing
 -------------------------------------------------------------------------------- {% endcomment %}
@@ -133,8 +133,8 @@ resource_options:
   {% assign image_filters = '' %}
 {% endif %}
 
-{% comment %} language detection NOT used anymore
---------------------------------------------------------------------------------
+{% comment %} language detection
+-------------------------------------------------------------------------------- {% endcomment %}
 {% if site.language == "en" %}
   {% assign language = "en" %}
 {% elsif site.language == "de"%}
@@ -142,9 +142,6 @@ resource_options:
 {% else %}
   {% assign language = "en" %}
 {% endif %}
--------------------------------------------------------------------------------- {% endcomment %}
-
-{% assign language = site.language %}
 
 {% if language == "en" %}
   {% assign readmore_text               = "read" %}
@@ -157,8 +154,6 @@ resource_options:
   {% assign view_description_text     = blog_navigator_options.category_view.page_text.en.description %}
 {% endif %}
 
-{% comment %} language NOT used anymore
---------------------------------------------------------------------------------
 {% if language == "de" %}
   {% assign readmore_text               = "lesen" %}
 
@@ -170,7 +165,6 @@ resource_options:
   {% assign view_headline             = blog_navigator_options.category_view.page_text.de.headline %}
   {% assign view_description_text     = blog_navigator_options.category_view.page_text.de.description %}
 {% endif %}
--------------------------------------------------------------------------------- {% endcomment %}
 
 {% comment %} Debugging
 --------------------------------------------------------------------------------
@@ -185,7 +179,7 @@ site_category_word_list:    {{site_category_word_list | debug}}
 {% include {{create_word_cloud}} source="categories" word_list=category_list %}
 
 <!-- [INFO   ] [ {{page.url}} ] [Generate HTML}] -->
-<div class="paginator speak2me-ignore ml-3 mb-4">
+<div class="paginator speak2me-ignore ml-3">
   <ul class="pagination raised-z0">
     <li class="page-item"><a class="page-link" href="/" title="Home">Home</a></li>
     <!-- li class="page-item"><a class="page-link" href="{{navigator|prepend: site.baseurl}}" alt="Blog Navigator">Navigator</a></li -->
@@ -198,12 +192,12 @@ site_category_word_list:    {{site_category_word_list | debug}}
 
 <div class="post-search-results ml-3">
   {% if blog_navigator_options.category_view.page_text.enabled %}
-  <div class="view-description">{{view_description_text}}</div>
+  <div class="view-description mb-5">{{view_description_text}}</div>
   {% endif %}
 
-  <div class="post-headline">
-    <h2 id="post-headline" class="notoc mt-5">{{view_headline}}</h2>
-  </div>
+  <!-- div class="post-headline">
+    <h2 id="post-headline notoc" class="mt-5">{{view_headline}}</h2>
+  </div -->
 
   {% assign tags = site.categories|sort %}
   {% for tag in tags %}

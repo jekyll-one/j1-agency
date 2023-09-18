@@ -1,11 +1,27 @@
-## Update Rubygems
+# Update Rubygems
 
 gem install rubygems-update
 update_rubygems
 gem update --system
 
+# J1 Theme MDE 4
 
-## Install a Ruby Gem
+Welcome to your new gem! In this directory, you'll find the files you need to
+be able to package up your Ruby library into a gem. Put your Ruby code in the
+file `lib/j1`. To experiment with that code, run `bin/console` for
+an interactive prompt.
+
+## Create the RubyGem
+
+The creation process is controlled by the (gemspec) configuration file
+*j1-template.gemspec*. This configuration is used by the Ruby
+commandline utility `gem` called like so:
+
+``` sh
+gem build j1-template.gemspec
+```
+
+## Installation
 
 Add this line to your application's Gemfile:
 
@@ -21,32 +37,63 @@ gem install --local j1-template --no-document
 
 ### Userized Installation
 
-When you use the **--user-install** option, RubyGems will install the gems
-to a directory inside your home directory, something like `~/.gem/ruby/3.1.0`
-for Ruby version `3.1.x`. The commands provided by the gems you have installed
-will end up in ~/.gem/ruby/3.1.0/bin.
+When you use the --user-install option, RubyGems will install the gems to a
+directory inside your home directory, something like ~/.gem/ruby/1.9.1. The
+commands provided by the gems you installed will end up in
+~/.gem/ruby/1.9.1/bin.
+
+gem install j1-template --user-install --no-document
+
+
+For the programs installed there to be available for
+you, you need to add ~/.gem/ruby/1.9.1/bin to your PATH environment variable.
+
+For example, if you use bash you can add that directory to your PATH by
+adding code like this to your ~/.bashrc file:
+
+
+## Usage
+
+To install a Starter Web, simply run:
 
 ``` sh
-  gem install j1-template --user-install --no-document
+j1 generate starter
 ```
 
-For the programs installed userized, you need to add `~/.gem/ruby/3.1.0/bin`
-to your **PATH** environment variable.
-
-### Install a Gem in specific version
+This will create a general purpose skeleton under folder `starter`. To startup
+a Web using Jekyll, run on *Linux* or *MacOS*:
 
 ``` sh
-  gem install j1-template -v 2023.9.0 --user-install --no-document
+cd starter
+j1server.sh
 ```
-
-You can also use version comparators like >= or ~>
+or on *Windows*:
 
 ``` sh
-  gem install j1-template -v "~> 2023.9.0" --user-install --no-document
+cd starter
+j1server.bat
 ```
 
-### Install a Gem from different source
+## Development
 
-``` sh
-  gem install j1-template -v 2023.9.0 --source 'https://gem.fury.io/jekyll-one-org/' --user-install --no-document
-```
+After checking out the repo, run `bin/setup` to install dependencies. You can
+also run `bin/console` for an interactive prompt that will allow you to
+experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`.
+To release a new version, update the version number in `version.rb`, and then
+run `bundle exec rake release`, which will create a git tag for the version,
+push git commits and tags, and push the `.gem` file to
+[rubygems.org](https://rubygems.org).
+
+
+## Contributing
+
+Bug reports and pull requests are welcome at
+[GitHub](https://github.com/jekyll-one-org/J1 Theme).
+
+
+## License
+
+The gem is available as OpenSource under the terms of the
+[MIT License](https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md).

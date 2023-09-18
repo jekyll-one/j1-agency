@@ -1,5 +1,5 @@
 ---
-title:                                  Theme
+title:                                  Theme Agency
 title_extention:                        Preview Bootstrap Agency Styles
 tagline:                                Agency Styles
 
@@ -26,6 +26,7 @@ image:
   height:                               1280
   alt:                                  Bootstrap Theme Agency
 
+tts:                                    false
 comments:                               false
 fab_menu_id:                            open_toc
 scrollbar:                              false

@@ -1,5 +1,6 @@
 ---
 title:                                  Welcome to Jekyll
+title_extention:                        Websites For Everyone
 tagline:                                Websites For Everyone
 
 #date:                                  2023-09-22
@@ -24,7 +25,7 @@ image:
   alt:                                  Photo by Katie Moum on Unsplash
 
 group:                                  Featured
-#series:                                Featured
+series:                                 Featured
 
 tts:                                    true
 fab_menu_id:                            open_toc
@@ -77,12 +78,11 @@ excerpt__end
 
 // Page content
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[role="mb-5"]
 All you’re doing at the end of the day is writing your content, and the J1
 Template does all the tricky things: putting out HTML, Javascript, and CSS.
 As a result, the site creation process gets out of your way.
 
-mdi:clock-time-five-outline[24px, md-gray mr-2 mt-4]
+mdi:clock-time-five-outline[24px, md-gray mr-2]
 *5 Minutes* to read
 
 // Include sub-documents (if any)

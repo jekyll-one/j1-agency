@@ -1,4 +1,4 @@
-# All you need for your new amazing site
+# J1 Agency
 
 Jekyll meets Bootstrap - and makes a lot of friends. J1 Theme combines
 the best of Open Source software for the Web and the Web site generator

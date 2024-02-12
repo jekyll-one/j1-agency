@@ -5,17 +5,16 @@
 # Product/Info:
 # https://jekyll.one
 #
-# Copyright (C) 2023 Juergen Adams
+# Copyright (C) 2023, 2024 Juergen Adams
 #
-# J1 Theme is licensed under the MIT License.
+# J1 Template is licensed under the MIT License.
 # See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
 # ------------------------------------------------------------------------------
 
 # ------------------------------------------------------------------------------
-# Description (used for J1 CC only)
+# Description
 #
 description:
-
   title:                                Carousel
   scope:                                User settings
   location:                             _data/apps/carousel.yml
@@ -165,6 +164,11 @@ settings:
   # ----------------------------------------------------------------------------
   #
   carousel:
+
+    # --------------------------------------------------------------------------
+    # CAROUSEL configurations
+    # --------------------------------------------------------------------------
+
     # --------------------------------------------------------------------------
     # AGENCY clients
     #
@@ -222,3 +226,6 @@ settings:
           paginationNumbers:            false
           itemsDesktop:                 "[1199,3]"
           itemsDesktopSmall:            "[979,3]"
+
+# ------------------------------------------------------------------------------
+# END config

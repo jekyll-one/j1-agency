@@ -5,13 +5,15 @@
 # Product/Info:
 # https://jekyll.one
 #
-# Copyright (C) 2023 Juergen Adams
+# Copyright (C) 2023, 2024 Juergen Adams
 #
-# J1 Theme is licensed under the MIT License.
+# J1 Template is licensed under the MIT License.
 # See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
 #
 # ------------------------------------------------------------------------------
-
+# NOTE: All footer id's has to be prefixed by 'footer_'
+#
+# ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------
 # Description (used for J1 CC only)
 #
@@ -28,7 +30,7 @@ settings:
   enabled:                              true
 
   # ----------------------------------------------------------------------------
-  # FOOTER global settings
+  # FOOTER settings
   #
   active_footer:                        footer_uno
 
@@ -38,7 +40,7 @@ settings:
   footers:
 
     # --------------------------------------------------------------------------
-    # Footer UNO light
+    # Footer UNO
     #
     - name:                             Footer UNO
       footer:
@@ -50,7 +52,7 @@ settings:
 
         wave:
           top:
-            enabled:                    true
+            enabled:                    false
             height:                     4                                       # [1 .. 9]
             style:                      wave-4
             transform:                  false                                   # false or rotate|flip-x|flip-y and combinations
@@ -76,7 +78,7 @@ settings:
         icons:
           github:
             enabled:                    true
-            href:                       https://github.com/jekyll-one/j1-agency
+            href:                       https://github.com/jekyll-one/j1-starter
           facebook:
             enabled:                    true
             href:                       "#"
@@ -104,7 +106,7 @@ settings:
               enabled:                  true
 
               type:                     copyright
-              statement:                © 2023 J1 · All rights reserved
+              statement:                © 2023, 2024, 2024 J1 · All rights reserved
               translate_statement:      notranslate                             # translate|notranslate
               href:                     /pages/public/legal/en/copyright/
 
@@ -174,16 +176,17 @@ settings:
             type:                       about
             enabled:                    true
 
-            title:                      Agency
+            title:                      Starter
             title_translation:          notranslate
-            tagline:                    featured template for jekyll
+            tagline:                    powerful template for jekyll
             text: >
-                                        Agency is one of the most popular HTML themes based on
-                                        Bootstrap V5 offered by Start Bootstrap.
+                                        The Starter Web of J1 Template is a full-featured template
+                                        for Jekyll to create modern dynamic websites. The template
+                                        system provides a clean implementation for starting new projects.
                                         <br><br>
-                                        This theme gives all pepple a simple and clean implementation
-                                        of Jekyll for starting new projects. This template is free
-                                        and open source, released under the MIT license.
+                                        J1 Template is Open Source, and all the modules included are
+                                        also free to use.
+
             justify:                    false
 
           # --------------------------------------------------------------------
@@ -217,21 +220,21 @@ settings:
                   title:                Jekyll Home
                   title_translation:    notranslate
                   tagline:              First for latest news
-                  href:                 http://jekyllrb.com/
+                  href:                 https://jekyllrb.com/
 
               - name:                   Jekyll Tips
                 link:
                   title:                Jekyll Tips
                   title_translation:    notranslate
                   tagline:              Learn from experts
-                  href:                 http://jekyll.tips/
+                  href:                 https://jekyll.tips/
 
               - name:                   Stackoverflow
                 link:
                   title:                Stackoverflow
                   title_translation:    notranslate
                   tagline:              Get help
-                  href:                 http://stackoverflow.com/questions/tagged/jekyll
+                  href:                 https://stackoverflow.com/questions/tagged/jekyll
 
           # --------------------------------------------------------------------
           # CONTACT box

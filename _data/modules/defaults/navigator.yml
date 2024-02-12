@@ -6,11 +6,10 @@
 # Product/Info:
 # https://jekyll.one
 #
-# Copyright (C) 2023 Juergen Adams
+# Copyright (C) 2023, 2024 Juergen Adams
 #
-# J1 Theme is licensed under the MIT License.
+# J1 Template is licensed under the MIT License.
 # See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
-#
 # ------------------------------------------------------------------------------
 # NOTE:
 #   For main navigation bar settings, see j1_navigator_menu.yml
@@ -205,6 +204,10 @@ defaults:
 
     # Action buttons
     # --------------------------------------------------------------------------
+    docsearch_icon:                     head-question
+    docsearch_action:                   documind
+    docsearch_label:                    Doc Search
+
     quicksearch_icon:                   magnify
     quicksearch_action:                 quicksearch
     quicksearch_label:                  Search

@@ -5,10 +5,13 @@
 #  Product/Info:
 #  https://jekyll.one
 #
-#  Copyright (C) 2023 Juergen Adams
+#  Copyright (C) 2023, 2024 Juergen Adams
 #
-#  J1 Theme is licensed under the MIT License.
+#  J1 Template is licensed under the MIT License.
 #  See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
+#
+# ------------------------------------------------------------------------------
+# NOTE: All banner id's has to be prefixed by 'banner_'
 #
 # ------------------------------------------------------------------------------
 
@@ -39,7 +42,7 @@ settings:
     #
     - name:                             Divider Banner 1
       banner:
-        enabled:                        false
+        enabled:                        true
 
         id:                             banner_divider_1
         comment:                        Divider Banner 1
@@ -47,7 +50,7 @@ settings:
 
     - name:                             Divider Banner 2
       banner:
-        enabled:                        false
+        enabled:                        true
 
         id:                             banner_divider_2
         comment:                        Divider Banner 2
@@ -68,13 +71,13 @@ settings:
     #
     - name:                             Home Teaser Banner
       banner:
-        enabled:                        false
+        enabled:                        true
 
         id:                             banner_home_teaser
         comment:                        Top teaser shown on home page
         type:                           teaser
         badges:                         false
-        icon_family:                    MDI
+        icon_family:                    mdib
         properties:                     mb-5
 
         wave:
@@ -107,24 +110,24 @@ settings:
               description_properties:   mt-3 mb-3
               description: >
                                         <p class="dropcap">
-                                          The Starter Theme of JekyllOne is a full-featured template for Jekyll to
-                                          create modern dynamic websites. The template system gives hobbyists
-                                          and professionals a clean implementation for starting new projects.
-                                          JekyllOne is open source, and the modules packed are also free
-                                          to use. No license issues for private or professional purposes.
+                                          The Starter Web of J1 Template is a full-featured template for Jekyll to
+                                          create modern dynamic websites. The template system provides a clean
+                                          implementation for starting new projects. Jekyll One is open source,
+                                          and the modules packed are also free to use.
                                         </p>
                                         <p>
-                                          J1 Starter Theme is designed to be lightweight and easily customizable.
+                                          J1 Starter Web is designed to be lightweight and easily customizable.
                                           It comes with a basic structure and styling out of the box so that you
                                           can create a website quickly and easily, without having to worry about
-                                          the code. It features a modern, minimalist design with a focus on usability
-                                          and accessibility. Additionally, it comes with built-in support for search
-                                          engine optimization (SEO) and social media integration, making it easy to
-                                          get your site off the ground and running.
+                                          the code.
                                         </p>
-                                        <p class="tagline">
-                                          <b>Explore what's possible if you go for modern static websites.</b>
+                                        <p>
+                                          It features a modern, minimalist design with a focus on usability
+                                          and accessibility. Additionally, it comes with built-in support for
+                                          search engine optimization and social media integration, making it
+                                          easy to get your site off the ground and running.
                                         </p>
+                                        <p class="mt-4 fw-bold">Explore what is possible when using static webs.</p>
               buttons:
 
                 - name:                 Roundtrip
@@ -187,7 +190,7 @@ settings:
     #
     - name:                             Home Parallax Banner
       banner:
-        enabled:                        false
+        enabled:                        true
 
         id:                             banner_home_parallax
         comment:                        Main parallax banner shown on home page
@@ -200,7 +203,7 @@ settings:
             card:
               enabled:                  true
               type:                     quote
-#             cite:                     J1 Team
+              cite:                     J1 Team
               cite_text_size:           300%
               cite_text_quotes:         false
               cite_text: >
@@ -230,7 +233,7 @@ settings:
     #
     - name:                             Home Image Banner
       banner:
-        enabled:                        false
+        enabled:                        true
 
         id:                             banner_home_image
         comment:                        Image banner shown on home page

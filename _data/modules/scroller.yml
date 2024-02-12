@@ -5,9 +5,9 @@
 # Product/Info:
 # https://jekyll.one
 #
-# Copyright (C) 2023 Juergen Adams
+# Copyright (C) 2023, 2024 Juergen Adams
 #
-# J1 Theme is licensed under the MIT License.
+# J1 Template is licensed under the MIT License.
 # See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
 # ------------------------------------------------------------------------------
 
@@ -29,6 +29,7 @@ settings:
   # SmoothScroll options
   # ----------------------------------------------------------------------------
   smoothscroll:
+    offsetBase:                         80
     offsetCorrection:                   -9
     offsetCorrectionLocal:              -90
 
@@ -41,7 +42,7 @@ settings:
     # Intro Panel
     #
     - scroller:
-        enabled:                        false
+        enabled:                        true
         type:                           showOnScroll
         id:                             panel_home_intro
         container:                      panel_home_intro
@@ -69,8 +70,8 @@ settings:
         container:                      panel_home_news-scroll-group
         pagePath:                       /assets/data/news_panel_posts/page
         elementScroll:                  true                                    # false = window, true = container
-        scrollOffset:                   400
-        lastPage:                       1                                       # 1 page "equals" 2 posts
+        scrollOffset:                   200
+        lastPage:                       2                                       # 1 page "equals" 2 posts
         infoLastPage:                   true
 
         lastPageInfo_en: >
@@ -90,8 +91,8 @@ settings:
         container:                      timeline
         pagePath:                       /pages/public/blog/navigator/page
         elementScroll:                  true
-        scrollOffset:                   400
-        lastPage:                       1
+        scrollOffset:                   200
+        lastPage:                       2                                       # Dosn't work: high number "means" ALL pages|posts to load
         infoLastPage:                   false
 
         lastPageInfo_en:                ""

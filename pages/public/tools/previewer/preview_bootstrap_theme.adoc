@@ -28,7 +28,7 @@ image:
 tts:                                    true
 comments:                               false
 regenerate:                             false
-permalink:                              /pages/public/tools/previewer/current_theme/
+permalink:                              /pages/public/previewer/theme/
 
 resources:                              [ animate, bmd, rouge ]
 resource_options:

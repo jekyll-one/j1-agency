@@ -78,21 +78,21 @@ settings:
         icons:
           github:
             enabled:                    true
-            href:                       https://github.com/jekyll-one/j1-starter
+            href:                       https://github.com/jekyll-one/j1-agency
           facebook:
-            enabled:                    true
+            enabled:                    false
             href:                       "#"
 #           href:                       https://www.facebook.com/<your_profile>/
           twitter:
-            enabled:                    true
+            enabled:                    false
             href:                       "#"
 #           href:                       https://twitter.com/<your_profile>/
           xing:
-            enabled:                    true
+            enabled:                    false
             href:                       "#"
 #           href:                       https://www.xing.com/profile/<your_profile>/
           linkedin:
-            enabled:                    true
+            enabled:                    false
             href:                       "#"
 #           href:                       https://www.linkedin.com/in/<your_profile>/
 
@@ -106,7 +106,7 @@ settings:
               enabled:                  true
 
               type:                     copyright
-              statement:                © 2023, 2024, 2024 J1 · All rights reserved
+              statement:                © 2023, 2024 J1 · All rights reserved
               translate_statement:      notranslate                             # translate|notranslate
               href:                     /pages/public/legal/en/copyright/
 
@@ -176,16 +176,16 @@ settings:
             type:                       about
             enabled:                    true
 
-            title:                      Starter
+            title:                      Agency
             title_translation:          notranslate
-            tagline:                    powerful template for jekyll
+            tagline:                    featured template for jekyll
             text: >
-                                        The Starter Web of J1 Template is a full-featured template
-                                        for Jekyll to create modern dynamic websites. The template
-                                        system provides a clean implementation for starting new projects.
+                                        Agency is one of the most popular HTML themes based on
+                                        Bootstrap V5 offered by Start Bootstrap.
                                         <br><br>
-                                        J1 Template is Open Source, and all the modules included are
-                                        also free to use.
+                                        This theme gives all pepple a simple and clean implementation
+                                        of Jekyll for starting new projects. This template is free
+                                        and open source, released under the MIT license.
 
             justify:                    false
 
